@@ -1,0 +1,13 @@
+﻿supplier_id,monthly_disruption_probability,disruption_capacity_loss_min_pct,disruption_capacity_loss_max_pct,lead_time_std_days,defect_rate_mean,defect_rate_std,price_volatility_std_pct,regional_correlation_group,model_basis
+SUP001,0.02,0.15,0.55,6,0.005,0.0017,0.035,East Asia,Synthetic Monte Carlo parameters
+SUP002,0.01,0.15,0.55,6,0.0016,0.0005,0.035,East Asia,Synthetic Monte Carlo parameters
+SUP003,0.014,0.15,0.55,6,0.0024,0.0008,0.035,East Asia,Synthetic Monte Carlo parameters
+SUP004,0.012,0.15,0.55,4,0.0038,0.0013,0.035,Southeast Asia,Synthetic Monte Carlo parameters
+SUP005,0.018,0.15,0.55,6,0.0036,0.0012,0.035,East Asia,Synthetic Monte Carlo parameters
+SUP006,0.008,0.15,0.55,6,0.0014,0.0005,0.035,East Asia,Synthetic Monte Carlo parameters
+SUP007,0.027,0.15,0.55,6,0.0068,0.0023,0.035,East Asia,Synthetic Monte Carlo parameters
+SUP008,0.016,0.15,0.55,6,0.0044,0.0015,0.035,Southeast Asia,Synthetic Monte Carlo parameters
+SUP009,0.012,0.15,0.55,4,0.0056,0.0019,0.035,Southeast Asia,Synthetic Monte Carlo parameters
+SUP010,0.01,0.15,0.55,8,0.002,0.0007,0.035,Europe,Synthetic Monte Carlo parameters
+SUP011,0.012,0.15,0.55,6,0.0024,0.0008,0.035,Southeast Asia,Synthetic Monte Carlo parameters
+SUP012,0.017,0.15,0.55,6,0.0042,0.0014,0.035,Southeast Asia,Synthetic Monte Carlo parameters

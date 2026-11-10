@@ -1,0 +1,11 @@
+﻿assumption_id,assumption_name,assumption_value,unit,definition,source
+C001,Shortage penalty,8.0,USD/unit/month,Applied to unmet future material demand,Synthetic
+C002,Late delivery penalty,0.8,USD/unit-late,Illustrative service penalty; not contractual,Synthetic
+C003,Inventory carrying rate,0.015,fraction/month,Applied to inventory value,Synthetic
+C004,Supplier onboarding fixed cost,1200,USD/new supplier selected,Per new source activated in future horizon,Synthetic
+C005,Dual sourcing target,2,suppliers/material,Suggested resilience rule; feasibility checked in optimization,Policy assumption
+C006,Max supplier allocation share,0.7,fraction/material/month,Single supplier concentration limit,Policy assumption
+C007,Target OTIF,0.95,fraction,"Service goal, distinct from historical supplier OTIF",Policy assumption
+C008,Currency exchange,1,USD reporting multiplier,"USD-only model, no FX simulation",Synthetic
+C009,Monte Carlo draws,2000,draws,Recommended draw count,Simulation setting
+C010,Order lead buffer,4,days,Additional planned days before required receipt date,Synthetic

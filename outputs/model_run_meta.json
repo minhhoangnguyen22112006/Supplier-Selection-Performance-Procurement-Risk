@@ -1,0 +1,62 @@
+{
+  "scenario_metadata": {
+    "BASE_GREEDY": {
+      "solver_status": "Original greedy benchmark",
+      "solver_obj_internal": null,
+      "mip_gap": null
+    },
+    "BASE_GREEDY_14D": {
+      "solver_status": "Original greedy benchmark",
+      "solver_obj_internal": null,
+      "mip_gap": null
+    },
+    "COST_FULL": {
+      "solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "solver_obj_internal": 4826075.657136,
+      "mip_gap": 0.0
+    },
+    "COST_FULL_14D": {
+      "solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "solver_obj_internal": 4850140.03542168,
+      "mip_gap": 0.0
+    },
+    "DUAL70_4D": {
+      "solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "solver_obj_internal": 4826075.657136,
+      "mip_gap": 0.0
+    },
+    "DUAL70_14D": {
+      "solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "solver_obj_internal": 4850140.03542168,
+      "mip_gap": 0.0
+    },
+    "RISK70_4D": {
+      "solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "solver_obj_internal": 7551938.4714183,
+      "mip_gap": 0.0
+    },
+    "RISK70_10D": {
+      "solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "solver_obj_internal": 5355937.051726833,
+      "mip_gap": 3.477720389993032e-16
+    },
+    "RISK70_14D": {
+      "solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "solver_obj_internal": 5034858.807395487,
+      "mip_gap": 0.0
+    },
+    "RISK70_SELECT": {
+      "solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "solver_obj_internal": 5088574.343115306,
+      "mip_gap": 0.0
+    },
+    "RISK60_14D": {
+      "solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "solver_obj_internal": 5035582.277595061,
+      "mip_gap": 0.0
+    }
+  },
+  "seed": 20261109,
+  "draws": 3000,
+  "chosen": "RISK60_14D"
+}

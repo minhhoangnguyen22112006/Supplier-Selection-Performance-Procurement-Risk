@@ -1,0 +1,41 @@
+supplier_id,material_id,material_name,category_name,kraljic_quadrant,total_landed_cost_usd,supplier_name
+SUP001,MAT001,Aluminosilicate glass blank,Precision Glass & Ceramic,Strategic,393701.38,Orient Precision Materials
+SUP001,MAT002,Glass-ceramic preform,Precision Glass & Ceramic,Strategic,414603.94,Orient Precision Materials
+SUP001,MAT005,CNC precision frame,Mechanical Components,Leverage,343272.71,Orient Precision Materials
+SUP002,MAT001,Aluminosilicate glass blank,Precision Glass & Ceramic,Strategic,563933.14,Hikari Advanced Components
+SUP002,MAT004,Vacuum deposition target,Optical Coatings,Strategic,597595.48,Hikari Advanced Components
+SUP002,MAT009,UV optical adhesive,Specialty Adhesives,Bottleneck,471683.98,Hikari Advanced Components
+SUP003,MAT002,Glass-ceramic preform,Precision Glass & Ceramic,Strategic,533197.71,HanSol Technical Supply
+SUP003,MAT003,Anti-reflective coating solution,Optical Coatings,Strategic,485077.16,HanSol Technical Supply
+SUP003,MAT008,Diamond grinding pad,Industrial Consumables,Non-critical,312914.87,HanSol Technical Supply
+SUP003,MAT010,High-temperature bonding resin,Specialty Adhesives,Bottleneck,321781.84,HanSol Technical Supply
+SUP004,MAT001,Aluminosilicate glass blank,Precision Glass & Ceramic,Strategic,450286.37,VietTech Manufacturing
+SUP004,MAT005,CNC precision frame,Mechanical Components,Leverage,372861.64999999997,VietTech Manufacturing
+SUP004,MAT006,Stainless mounting bracket,Mechanical Components,Leverage,283164.36,VietTech Manufacturing
+SUP005,MAT002,Glass-ceramic preform,Precision Glass & Ceramic,Strategic,510563.34,Formosa Optical Solutions
+SUP005,MAT003,Anti-reflective coating solution,Optical Coatings,Strategic,418501.31,Formosa Optical Solutions
+SUP005,MAT004,Vacuum deposition target,Optical Coatings,Strategic,592784.81,Formosa Optical Solutions
+SUP006,MAT003,Anti-reflective coating solution,Optical Coatings,Strategic,546795.48,Nippon Surface Systems
+SUP006,MAT004,Vacuum deposition target,Optical Coatings,Strategic,586954.32,Nippon Surface Systems
+SUP006,MAT009,UV optical adhesive,Specialty Adhesives,Bottleneck,446606.75,Nippon Surface Systems
+SUP006,MAT010,High-temperature bonding resin,Specialty Adhesives,Bottleneck,495789.41,Nippon Surface Systems
+SUP007,MAT001,Aluminosilicate glass blank,Precision Glass & Ceramic,Strategic,447967.27999999997,Guangdong Industrial Co.
+SUP007,MAT002,Glass-ceramic preform,Precision Glass & Ceramic,Strategic,563012.9,Guangdong Industrial Co.
+SUP007,MAT006,Stainless mounting bracket,Mechanical Components,Leverage,290899.47,Guangdong Industrial Co.
+SUP007,MAT007,Polishing slurry,Industrial Consumables,Non-critical,178655.46,Guangdong Industrial Co.
+SUP008,MAT005,CNC precision frame,Mechanical Components,Leverage,399891.54,ASEAN Precision Works
+SUP008,MAT006,Stainless mounting bracket,Mechanical Components,Leverage,269964.91000000003,ASEAN Precision Works
+SUP008,MAT008,Diamond grinding pad,Industrial Consumables,Non-critical,289425.19,ASEAN Precision Works
+SUP009,MAT005,CNC precision frame,Mechanical Components,Leverage,516370.49,Mekong Industrial Supply
+SUP009,MAT006,Stainless mounting bracket,Mechanical Components,Leverage,286102.0,Mekong Industrial Supply
+SUP009,MAT007,Polishing slurry,Industrial Consumables,Non-critical,252739.22,Mekong Industrial Supply
+SUP010,MAT004,Vacuum deposition target,Optical Coatings,Strategic,598888.34,EuroChem Advanced Materials
+SUP010,MAT007,Polishing slurry,Industrial Consumables,Non-critical,274981.14,EuroChem Advanced Materials
+SUP010,MAT009,UV optical adhesive,Specialty Adhesives,Bottleneck,434056.16,EuroChem Advanced Materials
+SUP010,MAT010,High-temperature bonding resin,Specialty Adhesives,Bottleneck,522386.87,EuroChem Advanced Materials
+SUP011,MAT007,Polishing slurry,Industrial Consumables,Non-critical,272416.54,Singapore MicroMaterials
+SUP011,MAT008,Diamond grinding pad,Industrial Consumables,Non-critical,333804.93,Singapore MicroMaterials
+SUP011,MAT009,UV optical adhesive,Specialty Adhesives,Bottleneck,555355.76,Singapore MicroMaterials
+SUP012,MAT003,Anti-reflective coating solution,Optical Coatings,Strategic,542095.36,Pacific Optics Group
+SUP012,MAT008,Diamond grinding pad,Industrial Consumables,Non-critical,316489.44,Pacific Optics Group
+SUP012,MAT010,High-temperature bonding resin,Specialty Adhesives,Bottleneck,512540.24,Pacific Optics Group

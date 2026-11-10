@@ -1,0 +1,13 @@
+﻿supplier_id,supplier_name,country,region,financial_health_score,baseline_otd_probability,baseline_defect_probability,baseline_late_probability,annual_disruption_probability,payment_terms_days,qualification_status,assumption_source
+SUP001,Orient Precision Materials,China,East Asia,78,0.91,0.005,0.025,0.06,30,Approved,Synthetic case assumption
+SUP002,Hikari Advanced Components,Japan,East Asia,92,0.97,0.0016,0.008,0.03,45,Approved,Synthetic case assumption
+SUP003,HanSol Technical Supply,South Korea,East Asia,88,0.95,0.0024,0.014,0.042,45,Approved,Synthetic case assumption
+SUP004,VietTech Manufacturing,Vietnam,Southeast Asia,82,0.93,0.0038,0.018,0.036,30,Approved,Synthetic case assumption
+SUP005,Formosa Optical Solutions,Taiwan,East Asia,85,0.94,0.0036,0.017,0.054,45,Approved,Synthetic case assumption
+SUP006,Nippon Surface Systems,Japan,East Asia,94,0.98,0.0014,0.007,0.024,45,Approved,Synthetic case assumption
+SUP007,Guangdong Industrial Co.,China,East Asia,74,0.89,0.0068,0.031,0.081,30,Approved,Synthetic case assumption
+SUP008,ASEAN Precision Works,Thailand,Southeast Asia,80,0.92,0.0044,0.022,0.048,45,Approved,Synthetic case assumption
+SUP009,Mekong Industrial Supply,Vietnam,Southeast Asia,77,0.9,0.0056,0.026,0.036,30,Approved,Synthetic case assumption
+SUP010,EuroChem Advanced Materials,Germany,Europe,93,0.97,0.002,0.01,0.03,45,Approved,Synthetic case assumption
+SUP011,Singapore MicroMaterials,Singapore,Southeast Asia,90,0.96,0.0024,0.013,0.036,45,Approved,Synthetic case assumption
+SUP012,Pacific Optics Group,Malaysia,Southeast Asia,83,0.93,0.0042,0.019,0.051,45,Approved,Synthetic case assumption

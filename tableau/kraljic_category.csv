@@ -1,0 +1,6 @@
+category_id,category_name,supply_risk_score,profit_impact_score,kraljic_quadrant
+CAT01,Precision Glass & Ceramic,0.78,0.81,Strategic
+CAT02,Optical Coatings,0.72,0.86,Strategic
+CAT03,Mechanical Components,0.25,0.74,Leverage
+CAT04,Industrial Consumables,0.18,0.2,Non-critical
+CAT05,Specialty Adhesives,0.84,0.3,Bottleneck

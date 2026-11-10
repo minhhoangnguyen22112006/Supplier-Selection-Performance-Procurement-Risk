@@ -1,0 +1,16 @@
+{
+  "demand_units": 126708,
+  "source_quotations": 240,
+  "month_material_pairs": 60,
+  "historical_purchase_orders": 784,
+  "monte_carlo_draws": 3000,
+  "supplier_count": 12,
+  "policies_evaluated": 11,
+  "all_optimized_plans_cover_100pct": true,
+  "optimizer_moq_and_capacity_checked": true,
+  "baseline_unallocated_units": 963,
+  "risk_simulation_uses_common_random_numbers": true,
+  "recommended_scenario": "RISK60_14D",
+  "simulation_provenance": "entirely synthetic, probabilistic scenarios are assumptions, not company actuals",
+  "disclaimer": "on_time_accepted_pct is a simulated aggregate quantity service proxy; NOT historical supplier PO OTIF"
+}

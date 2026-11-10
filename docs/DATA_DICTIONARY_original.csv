@@ -1,0 +1,180 @@
+﻿table_name,grain,column_name,meaning,unit,key_type,nullable,example_value,source
+dim_category,category_id,category_id,Category id,,PK component,No,CAT01,Synthetic generated; see generate_dataset.py
+dim_category,category_id,category_name,Category name,,,No,Precision Glass & Ceramic,Synthetic generated; see generate_dataset.py
+dim_category,category_id,supply_risk_score,Supply risk score,,,No,0.78,Synthetic generated; see generate_dataset.py
+dim_category,category_id,profit_impact_score,Profit impact score,,,No,0.81,Synthetic generated; see generate_dataset.py
+dim_category,category_id,kraljic_quadrant,Kraljic quadrant,,,No,Strategic,Synthetic generated; see generate_dataset.py
+dim_material,material_id,material_id,Material id,,PK component,No,MAT001,Synthetic generated; see generate_dataset.py
+dim_material,material_id,material_name,Material name,,,No,Aluminosilicate glass blank,Synthetic generated; see generate_dataset.py
+dim_material,material_id,category_id,Category id,,,No,CAT01,Synthetic generated; see generate_dataset.py
+dim_material,material_id,uom,Uom,,,No,unit,Synthetic generated; see generate_dataset.py
+dim_material,material_id,reference_price_usd,Reference price usd,USD,,No,18.0,Synthetic generated; see generate_dataset.py
+dim_material,material_id,monthly_demand_base_units,Monthly demand base units,units,,No,2900,Synthetic generated; see generate_dataset.py
+dim_material,material_id,criticality,Criticality,,,No,High,Synthetic generated; see generate_dataset.py
+dim_supplier,supplier_id,supplier_id,Supplier id,,PK component,No,SUP001,Synthetic generated; see generate_dataset.py
+dim_supplier,supplier_id,supplier_name,Supplier name,,,No,Orient Precision Materials,Synthetic generated; see generate_dataset.py
+dim_supplier,supplier_id,country,Country,,,No,China,Synthetic generated; see generate_dataset.py
+dim_supplier,supplier_id,region,Region,,,No,East Asia,Synthetic generated; see generate_dataset.py
+dim_supplier,supplier_id,financial_health_score,Financial health score,,,No,78,Synthetic generated; see generate_dataset.py
+dim_supplier,supplier_id,baseline_otd_probability,Baseline otd probability,fraction (0-1),,No,0.91,Synthetic generated; see generate_dataset.py
+dim_supplier,supplier_id,baseline_defect_probability,Baseline defect probability,fraction (0-1),,No,0.005,Synthetic generated; see generate_dataset.py
+dim_supplier,supplier_id,baseline_late_probability,Baseline late probability,fraction (0-1),,No,0.025,Synthetic generated; see generate_dataset.py
+dim_supplier,supplier_id,annual_disruption_probability,"Synthetic prior attribute, not calibrated from event counts",fraction (0-1),,No,0.06,Synthetic generated; see generate_dataset.py
+dim_supplier,supplier_id,payment_terms_days,Payment terms days,days,,No,30,Synthetic generated; see generate_dataset.py
+dim_supplier,supplier_id,qualification_status,Qualification status,,,No,Approved,Synthetic generated; see generate_dataset.py
+dim_supplier,supplier_id,assumption_source,Assumption source,,,No,Synthetic case assumption,Synthetic generated; see generate_dataset.py
+bridge_supplier_material,supplier_id × material_id,supplier_id,Supplier id,,PK component,No,SUP001,Synthetic generated; see generate_dataset.py
+bridge_supplier_material,supplier_id × material_id,material_id,Material id,,PK component,No,MAT001,Synthetic generated; see generate_dataset.py
+bridge_supplier_material,supplier_id × material_id,approved_since,Approved since,,,No,2024-01-01,Synthetic generated; see generate_dataset.py
+bridge_supplier_material,supplier_id × material_id,is_approved,Is approved,,,No,1,Synthetic generated; see generate_dataset.py
+bridge_supplier_material,supplier_id × material_id,preferred_supplier,Preferred supplier,,,No,1,Synthetic generated; see generate_dataset.py
+bridge_supplier_material,supplier_id × material_id,nominal_monthly_capacity_units,Nominal monthly capacity units,units,,No,1305,Synthetic generated; see generate_dataset.py
+bridge_supplier_material,supplier_id × material_id,minimum_order_qty_units,Minimum order qty units,units,,No,260,Synthetic generated; see generate_dataset.py
+bridge_supplier_material,supplier_id × material_id,standard_lead_time_days,Standard lead time days,days,,No,9,Synthetic generated; see generate_dataset.py
+bridge_supplier_material,supplier_id × material_id,freight_usd_per_unit,Freight usd per unit,USD,,No,0.45,Synthetic generated; see generate_dataset.py
+bridge_supplier_material,supplier_id × material_id,import_duty_pct,Import duty pct,fraction (0-1),,No,0.04,Synthetic generated; see generate_dataset.py
+bridge_supplier_material,supplier_id × material_id,price_modifier,Price modifier,,,No,1.104,Synthetic generated; see generate_dataset.py
+fact_material_demand_history,month_id × material_id,month_id,Calendar month in YYYY-MM; independent monthly planning grain,,PK component,No,2024-11,Synthetic generated; see generate_dataset.py
+fact_material_demand_history,month_id × material_id,material_id,Material id,,PK component,No,MAT001,Synthetic generated; see generate_dataset.py
+fact_material_demand_history,month_id × material_id,demand_units,Demand units,units,,No,2621,Synthetic generated; see generate_dataset.py
+fact_material_demand_history,month_id × material_id,demand_type,Demand type,,,No,Historical demand,Synthetic generated; see generate_dataset.py
+fact_material_demand_history,month_id × material_id,forecast_method,Forecast method,,,No,Not applicable,Synthetic generated; see generate_dataset.py
+fact_material_demand_history,month_id × material_id,planning_version,Planning version,,,No,HIST_ACTUAL,Synthetic generated; see generate_dataset.py
+fact_purchase_order,po_id,po_id,Po id,,PK component,No,PO000001,Synthetic generated; see generate_dataset.py
+fact_purchase_order,po_id,order_date,Order date,,,No,2024-10-22,Synthetic generated; see generate_dataset.py
+fact_purchase_order,po_id,required_date,Required date,,,No,2024-11-18,Synthetic generated; see generate_dataset.py
+fact_purchase_order,po_id,order_month,"Month of material requirement, not necessarily PO creation month",,,No,2024-11,Synthetic generated; see generate_dataset.py
+fact_purchase_order,po_id,material_id,Material id,,,No,MAT001,Synthetic generated; see generate_dataset.py
+fact_purchase_order,po_id,supplier_id,Supplier id,,,No,SUP001,Synthetic generated; see generate_dataset.py
+fact_purchase_order,po_id,ordered_units,Ordered units,units,,No,840,Synthetic generated; see generate_dataset.py
+fact_purchase_order,po_id,unit_price_usd,Unit price usd,USD,,No,21.1952,Synthetic generated; see generate_dataset.py
+fact_purchase_order,po_id,currency,Currency,,,No,USD,Synthetic generated; see generate_dataset.py
+fact_purchase_order,po_id,incoterm,Incoterm,,,No,DAP,Synthetic generated; see generate_dataset.py
+fact_purchase_order,po_id,po_status,Po status,,,No,Closed,Synthetic generated; see generate_dataset.py
+fact_purchase_order,po_id,buyer_team,Buyer team,,,No,Brittle Components Sourcing,Synthetic generated; see generate_dataset.py
+fact_shipment,shipment_id,shipment_id,Shipment id,,PK component,No,SHP000001,Synthetic generated; see generate_dataset.py
+fact_shipment,shipment_id,po_id,Po id,,,No,PO000001,Synthetic generated; see generate_dataset.py
+fact_shipment,shipment_id,supplier_id,Supplier id,,,No,SUP001,Synthetic generated; see generate_dataset.py
+fact_shipment,shipment_id,material_id,Material id,,,No,MAT001,Synthetic generated; see generate_dataset.py
+fact_shipment,shipment_id,receipt_date,Receipt date,,,No,2024-11-18,Synthetic generated; see generate_dataset.py
+fact_shipment,shipment_id,received_units,Received units,units,,No,378,Synthetic generated; see generate_dataset.py
+fact_shipment,shipment_id,on_time_flag,1 when this individual receipt date is on/before its PO required date,,,No,1,Synthetic generated; see generate_dataset.py
+fact_shipment,shipment_id,days_late,Days late,,,No,0,Synthetic generated; see generate_dataset.py
+fact_shipment,shipment_id,delivery_note,Delivery note,,,No,DN000001,Synthetic generated; see generate_dataset.py
+fact_quality_inspection,inspection_id,inspection_id,Inspection id,,PK component,No,QI000001,Synthetic generated; see generate_dataset.py
+fact_quality_inspection,inspection_id,shipment_id,Shipment id,,,No,SHP000001,Synthetic generated; see generate_dataset.py
+fact_quality_inspection,inspection_id,inspection_date,Inspection date,,,No,2024-11-19,Synthetic generated; see generate_dataset.py
+fact_quality_inspection,inspection_id,inspected_units,Inspected units,units,,No,378,Synthetic generated; see generate_dataset.py
+fact_quality_inspection,inspection_id,accepted_units,Accepted units,units,,No,376,Synthetic generated; see generate_dataset.py
+fact_quality_inspection,inspection_id,rejected_units,Rejected units,units,,No,2,Synthetic generated; see generate_dataset.py
+fact_quality_inspection,inspection_id,defect_ppm,"Rejected units / inspected units × 1,000,000 at receipt grain",,,No,5291.0,Synthetic generated; see generate_dataset.py
+fact_quality_inspection,inspection_id,inspection_result,Inspection result,,,No,Pass,Synthetic generated; see generate_dataset.py
+fact_quality_inspection,inspection_id,defect_type,Defect type,,,No,Material contamination,Synthetic generated; see generate_dataset.py
+fact_invoice,invoice_id,invoice_id,Invoice id,,PK component,No,INV000001,Synthetic generated; see generate_dataset.py
+fact_invoice,invoice_id,po_id,Po id,,,No,PO000001,Synthetic generated; see generate_dataset.py
+fact_invoice,invoice_id,shipment_id,Shipment id,,,No,SHP000001,Synthetic generated; see generate_dataset.py
+fact_invoice,invoice_id,invoice_date,Invoice date,,,No,2024-11-20,Synthetic generated; see generate_dataset.py
+fact_invoice,invoice_id,invoiced_units,Invoiced units,units,,No,378,Synthetic generated; see generate_dataset.py
+fact_invoice,invoice_id,unit_price_usd,Unit price usd,USD,,No,21.1952,Synthetic generated; see generate_dataset.py
+fact_invoice,invoice_id,material_amount_usd,Material amount usd,USD,,No,8011.79,Synthetic generated; see generate_dataset.py
+fact_invoice,invoice_id,freight_usd,Freight usd,USD,,No,170.1,Synthetic generated; see generate_dataset.py
+fact_invoice,invoice_id,duty_usd,Duty usd,USD,,No,320.47,Synthetic generated; see generate_dataset.py
+fact_invoice,invoice_id,total_landed_cost_usd,"Invoice material amount + freight + duty, excluding quality failure cost",USD,,No,8502.36,Synthetic generated; see generate_dataset.py
+fact_invoice,invoice_id,currency,Currency,,,No,USD,Synthetic generated; see generate_dataset.py
+fact_payment,payment_id,payment_id,Payment id,,PK component,No,PAY000001,Synthetic generated; see generate_dataset.py
+fact_payment,payment_id,invoice_id,Invoice id,,,No,INV000001,Synthetic generated; see generate_dataset.py
+fact_payment,payment_id,payment_date,Payment date,,,No,2024-12-17,Synthetic generated; see generate_dataset.py
+fact_payment,payment_id,paid_amount_usd,Full invoice paid; no staged or withheld payments modeled,USD,,No,8502.36,Synthetic generated; see generate_dataset.py
+fact_payment,payment_id,payment_status,Payment status,,,No,Paid,Synthetic generated; see generate_dataset.py
+fact_historical_capacity,month_id × supplier_id × material_id,month_id,Calendar month in YYYY-MM; independent monthly planning grain,,PK component,No,2024-11,Synthetic generated; see generate_dataset.py
+fact_historical_capacity,month_id × supplier_id × material_id,supplier_id,Supplier id,,PK component,No,SUP001,Synthetic generated; see generate_dataset.py
+fact_historical_capacity,month_id × supplier_id × material_id,material_id,Material id,,PK component,No,MAT001,Synthetic generated; see generate_dataset.py
+fact_historical_capacity,month_id × supplier_id × material_id,available_capacity_units,Available capacity units,units,,No,1305,Synthetic generated; see generate_dataset.py
+fact_historical_capacity,month_id × supplier_id × material_id,event_id,Event id,,,Yes,EVT001,Synthetic generated; see generate_dataset.py
+fact_historical_capacity,month_id × supplier_id × material_id,capacity_basis,Capacity basis,,,No,Synthetic monthly supplier capacity,Synthetic generated; see generate_dataset.py
+fact_risk_event,event_id,event_id,Event id,,PK component,No,EVT001,Synthetic generated; see generate_dataset.py
+fact_risk_event,event_id,begin_month,Begin month,,,No,2025-03,Synthetic generated; see generate_dataset.py
+fact_risk_event,event_id,end_month,End month,,,No,2025-03,Synthetic generated; see generate_dataset.py
+fact_risk_event,event_id,supplier_id,Supplier id,,,No,SUP007,Synthetic generated; see generate_dataset.py
+fact_risk_event,event_id,disruption_type,Disruption type,,,No,Power outage,Synthetic generated; see generate_dataset.py
+fact_risk_event,event_id,capacity_loss_pct,Capacity loss pct,fraction (0-1),,No,0.3,Synthetic generated; see generate_dataset.py
+fact_risk_event,event_id,additional_lead_time_days,Additional lead time days,days,,No,12,Synthetic generated; see generate_dataset.py
+fact_risk_event,event_id,impact_class,Impact class,,,No,Historical simulated event,Synthetic generated; see generate_dataset.py
+fact_future_demand,month_id × material_id,month_id,Calendar month in YYYY-MM; independent monthly planning grain,,PK component,No,2026-11,Synthetic generated; see generate_dataset.py
+fact_future_demand,month_id × material_id,material_id,Material id,,PK component,No,MAT001,Synthetic generated; see generate_dataset.py
+fact_future_demand,month_id × material_id,demand_units,Demand units,units,,No,3649,Synthetic generated; see generate_dataset.py
+fact_future_demand,month_id × material_id,demand_type,Demand type,,,No,Forecast assumption,Synthetic generated; see generate_dataset.py
+fact_future_demand,month_id × material_id,forecast_method,Forecast method,,,No,Trend + seasonality + scenario noise,Synthetic generated; see generate_dataset.py
+fact_future_demand,month_id × material_id,planning_version,Planning version,,,No,PLAN_2026_11_V1,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,quote_id,Quote id,,PK component,No,Q000001,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,plan_month,Plan month,,,No,2026-11,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,supplier_id,Supplier id,,,No,SUP001,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,material_id,Material id,,,No,MAT001,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,quoted_unit_price_usd,Quoted unit price usd,USD,,No,20.4557,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,freight_usd_per_unit,Freight usd per unit,USD,,No,0.45,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,duty_pct,Duty pct,fraction (0-1),,No,0.04,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,minimum_order_qty_units,Minimum order qty units,units,,No,260,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,maximum_capacity_units,Maximum capacity units,units,,No,1305,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,quoted_lead_time_days,Quoted lead time days,days,,No,9,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,quote_valid_until,Quote valid until,,,No,2026-11-30,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,eligible_for_award,Eligible for award,,,No,1,Synthetic generated; see generate_dataset.py
+fact_supplier_quote,quote_id,currency,Currency,,,No,USD,Synthetic generated; see generate_dataset.py
+fact_future_capacity,plan_month × supplier_id × material_id,plan_month,Plan month,,PK component,No,2026-11,Synthetic generated; see generate_dataset.py
+fact_future_capacity,plan_month × supplier_id × material_id,supplier_id,Supplier id,,PK component,No,SUP001,Synthetic generated; see generate_dataset.py
+fact_future_capacity,plan_month × supplier_id × material_id,material_id,Material id,,PK component,No,MAT001,Synthetic generated; see generate_dataset.py
+fact_future_capacity,plan_month × supplier_id × material_id,normal_capacity_units,Normal capacity units,units,,No,1305,Synthetic generated; see generate_dataset.py
+fact_future_capacity,plan_month × supplier_id × material_id,stress_capacity_units,Stress capacity units,units,,No,848,Synthetic generated; see generate_dataset.py
+fact_future_capacity,plan_month × supplier_id × material_id,scenario_name,Scenario name,,,No,Regional disruption stress,Synthetic generated; see generate_dataset.py
+fact_baseline_allocation,plan_month × material_id × supplier_id,plan_month,Plan month,,PK component,No,2026-11,Synthetic generated; see generate_dataset.py
+fact_baseline_allocation,plan_month × material_id × supplier_id,material_id,Material id,,PK component,No,MAT001,Synthetic generated; see generate_dataset.py
+fact_baseline_allocation,plan_month × material_id × supplier_id,supplier_id,Supplier id,,PK component,No,SUP001,Synthetic generated; see generate_dataset.py
+fact_baseline_allocation,plan_month × material_id × supplier_id,allocated_units,"Allocated plan units, or unallocated units when supplier_id=UNALLOCATED",units,,No,1305,Synthetic generated; see generate_dataset.py
+fact_baseline_allocation,plan_month × material_id × supplier_id,allocation_policy,Allocation policy,,,No,Lowest landed-cost eligible supplier (greedy),Synthetic generated; see generate_dataset.py
+fact_baseline_allocation,plan_month × material_id × supplier_id,quote_id,Quote id,,,Yes,Q000001,Synthetic generated; see generate_dataset.py
+fact_baseline_allocation,plan_month × material_id × supplier_id,expected_landed_cost_usd,Expected landed cost usd,USD,,No,28349.73,Synthetic generated; see generate_dataset.py
+dim_risk_assumptions,supplier_id,supplier_id,Supplier id,,PK component,No,SUP001,Synthetic generated; see generate_dataset.py
+dim_risk_assumptions,supplier_id,monthly_disruption_probability,Monthly disruption probability,fraction (0-1),,No,0.02,Synthetic generated; see generate_dataset.py
+dim_risk_assumptions,supplier_id,disruption_capacity_loss_min_pct,Disruption capacity loss min pct,fraction (0-1),,No,0.15,Synthetic generated; see generate_dataset.py
+dim_risk_assumptions,supplier_id,disruption_capacity_loss_max_pct,Disruption capacity loss max pct,fraction (0-1),,No,0.55,Synthetic generated; see generate_dataset.py
+dim_risk_assumptions,supplier_id,lead_time_std_days,Lead time std days,days,,No,6,Synthetic generated; see generate_dataset.py
+dim_risk_assumptions,supplier_id,defect_rate_mean,Defect rate mean,,,No,0.005,Synthetic generated; see generate_dataset.py
+dim_risk_assumptions,supplier_id,defect_rate_std,Defect rate std,,,No,0.0017,Synthetic generated; see generate_dataset.py
+dim_risk_assumptions,supplier_id,price_volatility_std_pct,Price volatility std pct,fraction (0-1),,No,0.035,Synthetic generated; see generate_dataset.py
+dim_risk_assumptions,supplier_id,regional_correlation_group,Regional correlation group,,,No,East Asia,Synthetic generated; see generate_dataset.py
+dim_risk_assumptions,supplier_id,model_basis,Model basis,,,No,Synthetic Monte Carlo parameters,Synthetic generated; see generate_dataset.py
+dim_cost_assumptions,assumption_id,assumption_id,Assumption id,,PK component,No,C001,Synthetic generated; see generate_dataset.py
+dim_cost_assumptions,assumption_id,assumption_name,Assumption name,,,No,Shortage penalty,Synthetic generated; see generate_dataset.py
+dim_cost_assumptions,assumption_id,assumption_value,Assumption value,,,No,8.0,Synthetic generated; see generate_dataset.py
+dim_cost_assumptions,assumption_id,unit,Unit,,,No,USD/unit/month,Synthetic generated; see generate_dataset.py
+dim_cost_assumptions,assumption_id,definition,Definition,,,No,Applied to unmet future material demand,Synthetic generated; see generate_dataset.py
+dim_cost_assumptions,assumption_id,source,Source,,,No,Synthetic,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,po_id,Po id,,PK component,No,PO000001,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,month_id,Calendar month in YYYY-MM; independent monthly planning grain,,,No,2024-11,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,supplier_id,Supplier id,,,No,SUP001,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,material_id,Material id,,,No,MAT001,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,ordered_units,Ordered units,units,,No,840,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,received_units,Received units,units,,No,840,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,on_time_received_units,On time received units,units,,No,378,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,accepted_units,Accepted units,units,,No,835,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,rejected_units,Rejected units,units,,No,5,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,otif_po_flag,Otif po flag,,,No,0,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,any_on_time_receipt_flag,Any on time receipt flag,,,No,1,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,otif_volume_pct,Otif volume pct,fraction (0-1),,No,0.45,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,landed_cost_usd,Landed cost usd,USD,,No,18894.13,Synthetic generated; see generate_dataset.py
+agg_po_delivery_scorecard,po_id,quoted_price_to_reference,Quoted price to reference,,,No,1.17751,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,supplier_id,Supplier id,,PK component,No,SUP004,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,supplier_name,Supplier name,,,No,VietTech Manufacturing,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,purchase_orders,Purchase orders,,,No,63,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,ordered_units,Ordered units,units,,No,50707,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,received_units,Received units,units,,No,50258,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,accepted_units,Accepted units,units,,No,50067,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,spent_usd,Spent usd,USD,,No,1106312.38,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,on_time_volume_pct,On time volume pct,fraction (0-1),,No,74.33,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,po_otif_pct,Po otif pct,fraction (0-1),,No,47.62,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,defect_ppm,"Rejected units / inspected units × 1,000,000 at receipt grain",,,No,3800.4,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,price_index_vs_sku_reference,Price index vs sku reference,,,No,1.1696,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,quality_score_100,Quality score 100,,,No,84.8,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,delivery_score_100,Delivery score 100,,,No,74.33,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,cost_score_100,Cost score 100,,,No,51.54,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,resilience_score_100,Resilience score 100,,,No,85.0,Synthetic generated; see generate_dataset.py
+agg_supplier_scorecard,supplier_id,weighted_score_100,Weighted score 100,,,No,73.38,Synthetic generated; see generate_dataset.py

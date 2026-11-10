@@ -1,0 +1,11 @@
+﻿material_id,material_name,category_id,uom,reference_price_usd,monthly_demand_base_units,criticality
+MAT001,Aluminosilicate glass blank,CAT01,unit,18.0,2900,High
+MAT002,Glass-ceramic preform,CAT01,unit,25.0,2250,High
+MAT003,Anti-reflective coating solution,CAT02,unit,44.0,1250,High
+MAT004,Vacuum deposition target,CAT02,unit,93.0,670,High
+MAT005,CNC precision frame,CAT03,unit,31.0,1550,Medium
+MAT006,Stainless mounting bracket,CAT03,unit,12.0,2800,Medium
+MAT007,Polishing slurry,CAT04,unit,16.0,1700,Medium
+MAT008,Diamond grinding pad,CAT04,unit,39.0,890,Medium
+MAT009,UV optical adhesive,CAT05,unit,48.0,1050,High
+MAT010,High-temperature bonding resin,CAT05,unit,60.0,820,High

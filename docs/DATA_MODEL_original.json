@@ -1,0 +1,183 @@
+{
+  "seed": 20261109,
+  "history_period": "2024-11 to 2026-10",
+  "planning_period": "2026-11 to 2027-04",
+  "tables": {
+    "dim_supplier": 12,
+    "dim_category": 5,
+    "dim_material": 10,
+    "bridge_supplier_material": 40,
+    "fact_material_demand_history": 240,
+    "fact_purchase_order": 784,
+    "fact_shipment": 1022,
+    "fact_quality_inspection": 1022,
+    "fact_invoice": 1022,
+    "fact_payment": 1022,
+    "fact_historical_capacity": 960,
+    "fact_risk_event": 5,
+    "fact_future_demand": 60,
+    "fact_supplier_quote": 240,
+    "fact_future_capacity": 240,
+    "fact_baseline_allocation": 175,
+    "dim_risk_assumptions": 12,
+    "dim_cost_assumptions": 10
+  },
+  "total_ordered_units": 435801,
+  "total_received_units": 430530,
+  "total_accepted_units": 428809,
+  "total_future_demand_units": 126708,
+  "baseline_unallocated_units": 963,
+  "total_historical_spend_usd": 17000113.25,
+  "validation": "passed: primary-foreign relations, receipt\u2264ordered, accepted+rejected=received, invoice costs, future allocation balance",
+  "tables_and_grains": {
+    "dim_category": {
+      "rows": 5,
+      "primary_key": [
+        "category_id"
+      ],
+      "description": "Procurement category and Kraljic segmentation assumptions"
+    },
+    "dim_material": {
+      "rows": 10,
+      "primary_key": [
+        "material_id"
+      ],
+      "description": "Material/SKU master and reference unit costs"
+    },
+    "dim_supplier": {
+      "rows": 12,
+      "primary_key": [
+        "supplier_id"
+      ],
+      "description": "Approved supplier master, countries and synthetic prior risk attributes"
+    },
+    "bridge_supplier_material": {
+      "rows": 40,
+      "primary_key": [
+        "supplier_id",
+        "material_id"
+      ],
+      "description": "Approved supplier-material combinations with MOQ, freight, duties and nominal capacity"
+    },
+    "fact_material_demand_history": {
+      "rows": 240,
+      "primary_key": [
+        "month_id",
+        "material_id"
+      ],
+      "description": "Observed simulated material demand over 24 historical months"
+    },
+    "fact_purchase_order": {
+      "rows": 784,
+      "primary_key": [
+        "po_id"
+      ],
+      "description": "Historical PO lines with ordered quantities, price and required receipt date"
+    },
+    "fact_shipment": {
+      "rows": 1022,
+      "primary_key": [
+        "shipment_id"
+      ],
+      "description": "Receipt events (partial receipts supported) linked to PO"
+    },
+    "fact_quality_inspection": {
+      "rows": 1022,
+      "primary_key": [
+        "inspection_id"
+      ],
+      "description": "Inspection outcome for each receipt with accepted/rejected units and defect category"
+    },
+    "fact_invoice": {
+      "rows": 1022,
+      "primary_key": [
+        "invoice_id"
+      ],
+      "description": "Invoice for each receipt and decomposed landed costs"
+    },
+    "fact_payment": {
+      "rows": 1022,
+      "primary_key": [
+        "payment_id"
+      ],
+      "description": "Synthetic payment posted for corresponding invoice"
+    },
+    "fact_historical_capacity": {
+      "rows": 960,
+      "primary_key": [
+        "month_id",
+        "supplier_id",
+        "material_id"
+      ],
+      "description": "Supplier material-month committed normal capacity adjusted for simulated disruptions"
+    },
+    "fact_risk_event": {
+      "rows": 5,
+      "primary_key": [
+        "event_id"
+      ],
+      "description": "Synthetic disruption events in historical window"
+    },
+    "fact_future_demand": {
+      "rows": 60,
+      "primary_key": [
+        "month_id",
+        "material_id"
+      ],
+      "description": "Six-month material requirement forecast, clearly tagged hypothetical"
+    },
+    "fact_supplier_quote": {
+      "rows": 240,
+      "primary_key": [
+        "quote_id"
+      ],
+      "description": "Supplier-specific RFQ offers by material-month: price, MOQ, capacity, freight, duties, lead time"
+    },
+    "fact_future_capacity": {
+      "rows": 240,
+      "primary_key": [
+        "plan_month",
+        "supplier_id",
+        "material_id"
+      ],
+      "description": "Future normal and predefined stress case capacity"
+    },
+    "fact_baseline_allocation": {
+      "rows": 175,
+      "primary_key": [
+        "plan_month",
+        "material_id",
+        "supplier_id"
+      ],
+      "description": "Risk-unaware greedy cheapest-landed-cost planning comparator, including UNALLOCATED rows"
+    },
+    "dim_risk_assumptions": {
+      "rows": 12,
+      "primary_key": [
+        "supplier_id"
+      ],
+      "description": "Parameter inputs for Monte Carlo supplier disruption, lead-time and defects"
+    },
+    "dim_cost_assumptions": {
+      "rows": 10,
+      "primary_key": [
+        "assumption_id"
+      ],
+      "description": "Explicit shortage, lateness, onboarding and inventory cost assumptions plus policy parameters"
+    },
+    "agg_po_delivery_scorecard": {
+      "rows": 784,
+      "primary_key": [
+        "po_id"
+      ],
+      "description": "Derived PO-grain delivery KPI base table that avoids receipt multiplicity errors"
+    },
+    "agg_supplier_scorecard": {
+      "rows": 12,
+      "primary_key": [
+        "supplier_id"
+      ],
+      "description": "Derived supplier performance and synthetic weighted scorecard for Power BI"
+    }
+  }
+}

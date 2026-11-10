@@ -1,0 +1,6 @@
+﻿event_id,begin_month,end_month,supplier_id,disruption_type,capacity_loss_pct,additional_lead_time_days,impact_class
+EVT001,2025-03,2025-03,SUP007,Power outage,0.3,12,Historical simulated event
+EVT002,2025-09,2025-10,SUP005,Coating line maintenance,0.22,10,Historical simulated event
+EVT003,2026-02,2026-02,SUP001,Port congestion,0.14,9,Historical simulated event
+EVT004,2026-06,2026-07,SUP009,Labor shortage,0.24,11,Historical simulated event
+EVT005,2026-09,2026-09,SUP003,Equipment breakdown,0.26,13,Historical simulated event

@@ -1,0 +1,241 @@
+quote_id,plan_month,supplier_id,material_id,quoted_unit_price_usd,freight_usd_per_unit,duty_pct,minimum_order_qty_units,maximum_capacity_units,quoted_lead_time_days,quote_valid_until,eligible_for_award,currency,unit_landed_cost_usd,material_name,criticality,category_id,supplier_name,region
+Q000001,2026-11,SUP001,MAT001,20.4557,0.45,0.04,260,1305,9,2026-11-30,1,USD,21.7239,Aluminosilicate glass blank,High,CAT01,Orient Precision Materials,East Asia
+Q000002,2026-11,SUP002,MAT001,22.8491,0.666,0.04,310,1653,15,2026-11-30,1,USD,24.4291,Aluminosilicate glass blank,High,CAT01,Hikari Advanced Components,East Asia
+Q000003,2026-11,SUP004,MAT001,21.3471,0.882,0.0,360,2001,13,2026-11-30,1,USD,22.2291,Aluminosilicate glass blank,High,CAT01,VietTech Manufacturing,Southeast Asia
+Q000004,2026-11,SUP007,MAT001,21.7456,1.098,0.04,410,2349,15,2026-11-30,1,USD,23.7134,Aluminosilicate glass blank,High,CAT01,Guangdong Industrial Co.,East Asia
+Q000005,2026-11,SUP001,MAT002,28.668,0.625,0.04,200,1012,9,2026-11-30,1,USD,30.4397,Glass-ceramic preform,High,CAT01,Orient Precision Materials,East Asia
+Q000006,2026-11,SUP003,MAT002,31.1094,0.925,0.04,240,1283,11,2026-11-30,1,USD,33.2788,Glass-ceramic preform,High,CAT01,HanSol Technical Supply,East Asia
+Q000007,2026-11,SUP005,MAT002,31.3527,1.225,0.04,280,1552,13,2026-11-30,1,USD,33.8318,Glass-ceramic preform,High,CAT01,Formosa Optical Solutions,East Asia
+Q000008,2026-11,SUP007,MAT002,29.6105,1.525,0.04,315,1823,15,2026-11-30,1,USD,32.3199,Glass-ceramic preform,High,CAT01,Guangdong Industrial Co.,East Asia
+Q000009,2026-11,SUP003,MAT003,52.3822,1.1,0.04,110,562,9,2026-11-30,1,USD,55.5775,Anti-reflective coating solution,High,CAT02,HanSol Technical Supply,East Asia
+Q000010,2026-11,SUP005,MAT003,53.25,1.628,0.04,135,713,11,2026-11-30,1,USD,57.008,Anti-reflective coating solution,High,CAT02,Formosa Optical Solutions,East Asia
+Q000011,2026-11,SUP006,MAT003,59.342,2.156,0.04,155,862,17,2026-11-30,1,USD,63.8717,Anti-reflective coating solution,High,CAT02,Nippon Surface Systems,East Asia
+Q000012,2026-11,SUP012,MAT003,56.0678,2.684,0.02,175,1013,15,2026-11-30,1,USD,59.8732,Anti-reflective coating solution,High,CAT02,Pacific Optics Group,Southeast Asia
+Q000013,2026-11,SUP002,MAT004,115.3005,2.325,0.04,60,302,13,2026-11-30,1,USD,122.2375,Vacuum deposition target,High,CAT02,Hikari Advanced Components,East Asia
+Q000014,2026-11,SUP005,MAT004,110.8494,3.441,0.04,70,382,11,2026-11-30,1,USD,118.7244,Vacuum deposition target,High,CAT02,Formosa Optical Solutions,East Asia
+Q000015,2026-11,SUP006,MAT004,124.6387,4.557,0.04,85,462,17,2026-11-30,1,USD,134.1812,Vacuum deposition target,High,CAT02,Nippon Surface Systems,East Asia
+Q000016,2026-11,SUP010,MAT004,132.4248,5.673,0.04,95,543,19,2026-11-30,1,USD,143.3948,Vacuum deposition target,High,CAT02,EuroChem Advanced Materials,Europe
+Q000017,2026-11,SUP001,MAT005,35.4479,0.775,0.04,140,698,9,2026-11-30,1,USD,37.6408,CNC precision frame,Medium,CAT03,Orient Precision Materials,East Asia
+Q000018,2026-11,SUP004,MAT005,35.3696,1.147,0.0,165,884,11,2026-11-30,1,USD,36.5166,CNC precision frame,Medium,CAT03,VietTech Manufacturing,Southeast Asia
+Q000019,2026-11,SUP008,MAT005,37.3788,1.519,0.02,190,1070,13,2026-11-30,1,USD,39.6454,CNC precision frame,Medium,CAT03,ASEAN Precision Works,Southeast Asia
+Q000020,2026-11,SUP009,MAT005,38.1753,1.891,0.0,220,1256,15,2026-11-30,1,USD,40.0663,CNC precision frame,Medium,CAT03,Mekong Industrial Supply,Southeast Asia
+Q000021,2026-11,SUP004,MAT006,13.6808,0.3,0.0,250,1260,9,2026-11-30,1,USD,13.9808,Stainless mounting bracket,Medium,CAT03,VietTech Manufacturing,Southeast Asia
+Q000022,2026-11,SUP007,MAT006,13.679,0.444,0.04,300,1596,11,2026-11-30,1,USD,14.6702,Stainless mounting bracket,Medium,CAT03,Guangdong Industrial Co.,East Asia
+Q000023,2026-11,SUP008,MAT006,14.4064,0.588,0.02,345,1932,13,2026-11-30,1,USD,15.2825,Stainless mounting bracket,Medium,CAT03,ASEAN Precision Works,Southeast Asia
+Q000024,2026-11,SUP009,MAT006,14.381,0.732,0.0,395,2268,15,2026-11-30,1,USD,15.113,Stainless mounting bracket,Medium,CAT03,Mekong Industrial Supply,Southeast Asia
+Q000025,2026-11,SUP007,MAT007,17.4948,0.4,0.04,155,765,9,2026-11-30,1,USD,18.5946,Polishing slurry,Medium,CAT04,Guangdong Industrial Co.,East Asia
+Q000026,2026-11,SUP009,MAT007,18.6842,0.592,0.0,180,969,11,2026-11-30,1,USD,19.2762,Polishing slurry,Medium,CAT04,Mekong Industrial Supply,Southeast Asia
+Q000027,2026-11,SUP010,MAT007,22.2947,0.784,0.04,210,1173,17,2026-11-30,1,USD,23.9705,Polishing slurry,Medium,CAT04,EuroChem Advanced Materials,Europe
+Q000028,2026-11,SUP011,MAT007,21.0844,0.976,0.02,240,1377,15,2026-11-30,1,USD,22.4821,Polishing slurry,Medium,CAT04,Singapore MicroMaterials,Southeast Asia
+Q000029,2026-11,SUP003,MAT008,46.424,0.975,0.04,80,400,9,2026-11-30,1,USD,49.256,Diamond grinding pad,Medium,CAT04,HanSol Technical Supply,East Asia
+Q000030,2026-11,SUP008,MAT008,45.4942,1.443,0.02,95,507,11,2026-11-30,1,USD,47.8471,Diamond grinding pad,Medium,CAT04,ASEAN Precision Works,Southeast Asia
+Q000031,2026-11,SUP011,MAT008,51.2223,1.911,0.02,110,614,13,2026-11-30,1,USD,54.1577,Diamond grinding pad,Medium,CAT04,Singapore MicroMaterials,Southeast Asia
+Q000032,2026-11,SUP012,MAT008,50.175,2.379,0.02,125,721,15,2026-11-30,1,USD,53.5575,Diamond grinding pad,Medium,CAT04,Pacific Optics Group,Southeast Asia
+Q000033,2026-11,SUP002,MAT009,59.6026,1.2,0.04,95,472,13,2026-11-30,1,USD,63.1867,UV optical adhesive,High,CAT05,Hikari Advanced Components,East Asia
+Q000034,2026-11,SUP006,MAT009,62.7825,1.776,0.04,110,599,15,2026-11-30,1,USD,67.0698,UV optical adhesive,High,CAT05,Nippon Surface Systems,East Asia
+Q000035,2026-11,SUP010,MAT009,66.7438,2.352,0.04,130,724,17,2026-11-30,1,USD,71.7656,UV optical adhesive,High,CAT05,EuroChem Advanced Materials,Europe
+Q000036,2026-11,SUP011,MAT009,64.2247,2.928,0.02,150,850,15,2026-11-30,1,USD,68.4372,UV optical adhesive,High,CAT05,Singapore MicroMaterials,Southeast Asia
+Q000037,2026-11,SUP003,MAT010,72.3107,1.5,0.04,75,369,9,2026-11-30,1,USD,76.7031,High-temperature bonding resin,High,CAT05,HanSol Technical Supply,East Asia
+Q000038,2026-11,SUP006,MAT010,78.2955,2.22,0.04,90,467,15,2026-11-30,1,USD,83.6473,High-temperature bonding resin,High,CAT05,Nippon Surface Systems,East Asia
+Q000039,2026-11,SUP010,MAT010,82.6082,2.94,0.04,100,566,17,2026-11-30,1,USD,88.8525,High-temperature bonding resin,High,CAT05,EuroChem Advanced Materials,Europe
+Q000040,2026-11,SUP012,MAT010,75.4611,3.66,0.02,115,664,15,2026-11-30,1,USD,80.6303,High-temperature bonding resin,High,CAT05,Pacific Optics Group,Southeast Asia
+Q000041,2026-12,SUP001,MAT001,21.1987,0.45,0.04,260,1324,9,2026-12-31,1,USD,22.4966,Aluminosilicate glass blank,High,CAT01,Orient Precision Materials,East Asia
+Q000042,2026-12,SUP002,MAT001,22.9439,0.666,0.04,310,1677,15,2026-12-31,1,USD,24.5277,Aluminosilicate glass blank,High,CAT01,Hikari Advanced Components,East Asia
+Q000043,2026-12,SUP004,MAT001,21.8708,0.882,0.0,360,2031,13,2026-12-31,1,USD,22.7528,Aluminosilicate glass blank,High,CAT01,VietTech Manufacturing,Southeast Asia
+Q000044,2026-12,SUP007,MAT001,21.7137,1.098,0.04,410,2384,15,2026-12-31,1,USD,23.6802,Aluminosilicate glass blank,High,CAT01,Guangdong Industrial Co.,East Asia
+Q000045,2026-12,SUP001,MAT002,28.6905,0.625,0.04,200,1027,9,2026-12-31,1,USD,30.4631,Glass-ceramic preform,High,CAT01,Orient Precision Materials,East Asia
+Q000046,2026-12,SUP003,MAT002,30.4933,0.925,0.04,240,1302,11,2026-12-31,1,USD,32.638,Glass-ceramic preform,High,CAT01,HanSol Technical Supply,East Asia
+Q000047,2026-12,SUP005,MAT002,31.6472,1.225,0.04,280,1575,13,2026-12-31,1,USD,34.1381,Glass-ceramic preform,High,CAT01,Formosa Optical Solutions,East Asia
+Q000048,2026-12,SUP007,MAT002,29.9181,1.525,0.04,315,1850,15,2026-12-31,1,USD,32.6398,Glass-ceramic preform,High,CAT01,Guangdong Industrial Co.,East Asia
+Q000049,2026-12,SUP003,MAT003,53.7044,1.1,0.04,110,570,9,2026-12-31,1,USD,56.9526,Anti-reflective coating solution,High,CAT02,HanSol Technical Supply,East Asia
+Q000050,2026-12,SUP005,MAT003,53.2815,1.628,0.04,135,723,11,2026-12-31,1,USD,57.0408,Anti-reflective coating solution,High,CAT02,Formosa Optical Solutions,East Asia
+Q000051,2026-12,SUP006,MAT003,58.7302,2.156,0.04,155,874,17,2026-12-31,1,USD,63.2354,Anti-reflective coating solution,High,CAT02,Nippon Surface Systems,East Asia
+Q000052,2026-12,SUP012,MAT003,56.4241,2.684,0.02,175,1028,15,2026-12-31,1,USD,60.2366,Anti-reflective coating solution,High,CAT02,Pacific Optics Group,Southeast Asia
+Q000053,2026-12,SUP002,MAT004,114.4067,2.325,0.04,60,306,13,2026-12-31,1,USD,121.308,Vacuum deposition target,High,CAT02,Hikari Advanced Components,East Asia
+Q000054,2026-12,SUP005,MAT004,112.8838,3.441,0.04,70,387,11,2026-12-31,1,USD,120.8402,Vacuum deposition target,High,CAT02,Formosa Optical Solutions,East Asia
+Q000055,2026-12,SUP006,MAT004,126.1701,4.557,0.04,85,468,17,2026-12-31,1,USD,135.7739,Vacuum deposition target,High,CAT02,Nippon Surface Systems,East Asia
+Q000056,2026-12,SUP010,MAT004,132.8224,5.673,0.04,95,551,19,2026-12-31,1,USD,143.8083,Vacuum deposition target,High,CAT02,EuroChem Advanced Materials,Europe
+Q000057,2026-12,SUP001,MAT005,36.2398,0.775,0.04,140,708,9,2026-12-31,1,USD,38.4644,CNC precision frame,Medium,CAT03,Orient Precision Materials,East Asia
+Q000058,2026-12,SUP004,MAT005,35.8731,1.147,0.0,165,897,11,2026-12-31,1,USD,37.0201,CNC precision frame,Medium,CAT03,VietTech Manufacturing,Southeast Asia
+Q000059,2026-12,SUP008,MAT005,37.3414,1.519,0.02,190,1086,13,2026-12-31,1,USD,39.6072,CNC precision frame,Medium,CAT03,ASEAN Precision Works,Southeast Asia
+Q000060,2026-12,SUP009,MAT005,37.9101,1.891,0.0,220,1274,15,2026-12-31,1,USD,39.8011,CNC precision frame,Medium,CAT03,Mekong Industrial Supply,Southeast Asia
+Q000061,2026-12,SUP004,MAT006,13.6232,0.3,0.0,250,1278,9,2026-12-31,1,USD,13.9232,Stainless mounting bracket,Medium,CAT03,VietTech Manufacturing,Southeast Asia
+Q000062,2026-12,SUP007,MAT006,13.6182,0.444,0.04,300,1619,11,2026-12-31,1,USD,14.6069,Stainless mounting bracket,Medium,CAT03,Guangdong Industrial Co.,East Asia
+Q000063,2026-12,SUP008,MAT006,14.2498,0.588,0.02,345,1960,13,2026-12-31,1,USD,15.1228,Stainless mounting bracket,Medium,CAT03,ASEAN Precision Works,Southeast Asia
+Q000064,2026-12,SUP009,MAT006,14.7547,0.732,0.0,395,2302,15,2026-12-31,1,USD,15.4867,Stainless mounting bracket,Medium,CAT03,Mekong Industrial Supply,Southeast Asia
+Q000065,2026-12,SUP007,MAT007,17.9277,0.4,0.04,155,776,9,2026-12-31,1,USD,19.0448,Polishing slurry,Medium,CAT04,Guangdong Industrial Co.,East Asia
+Q000066,2026-12,SUP009,MAT007,18.5451,0.592,0.0,180,983,11,2026-12-31,1,USD,19.1371,Polishing slurry,Medium,CAT04,Mekong Industrial Supply,Southeast Asia
+Q000067,2026-12,SUP010,MAT007,21.8173,0.784,0.04,210,1190,17,2026-12-31,1,USD,23.474,Polishing slurry,Medium,CAT04,EuroChem Advanced Materials,Europe
+Q000068,2026-12,SUP011,MAT007,21.1025,0.976,0.02,240,1397,15,2026-12-31,1,USD,22.5005,Polishing slurry,Medium,CAT04,Singapore MicroMaterials,Southeast Asia
+Q000069,2026-12,SUP003,MAT008,47.2528,0.975,0.04,80,405,9,2026-12-31,1,USD,50.1179,Diamond grinding pad,Medium,CAT04,HanSol Technical Supply,East Asia
+Q000070,2026-12,SUP008,MAT008,45.361,1.443,0.02,95,514,11,2026-12-31,1,USD,47.7112,Diamond grinding pad,Medium,CAT04,ASEAN Precision Works,Southeast Asia
+Q000071,2026-12,SUP011,MAT008,50.5262,1.911,0.02,110,623,13,2026-12-31,1,USD,53.4477,Diamond grinding pad,Medium,CAT04,Singapore MicroMaterials,Southeast Asia
+Q000072,2026-12,SUP012,MAT008,48.9597,2.379,0.02,125,731,15,2026-12-31,1,USD,52.3179,Diamond grinding pad,Medium,CAT04,Pacific Optics Group,Southeast Asia
+Q000073,2026-12,SUP002,MAT009,58.9409,1.2,0.04,95,479,13,2026-12-31,1,USD,62.4985,UV optical adhesive,High,CAT05,Hikari Advanced Components,East Asia
+Q000074,2026-12,SUP006,MAT009,61.6722,1.776,0.04,110,607,15,2026-12-31,1,USD,65.9151,UV optical adhesive,High,CAT05,Nippon Surface Systems,East Asia
+Q000075,2026-12,SUP010,MAT009,66.8437,2.352,0.04,130,734,17,2026-12-31,1,USD,71.8694,UV optical adhesive,High,CAT05,EuroChem Advanced Materials,Europe
+Q000076,2026-12,SUP011,MAT009,63.5461,2.928,0.02,150,862,15,2026-12-31,1,USD,67.745,UV optical adhesive,High,CAT05,Singapore MicroMaterials,Southeast Asia
+Q000077,2026-12,SUP003,MAT010,73.033,1.5,0.04,75,374,9,2026-12-31,1,USD,77.4543,High-temperature bonding resin,High,CAT05,HanSol Technical Supply,East Asia
+Q000078,2026-12,SUP006,MAT010,77.3996,2.22,0.04,90,474,15,2026-12-31,1,USD,82.7156,High-temperature bonding resin,High,CAT05,Nippon Surface Systems,East Asia
+Q000079,2026-12,SUP010,MAT010,83.814,2.94,0.04,100,574,17,2026-12-31,1,USD,90.1066,High-temperature bonding resin,High,CAT05,EuroChem Advanced Materials,Europe
+Q000080,2026-12,SUP012,MAT010,75.9524,3.66,0.02,115,673,15,2026-12-31,1,USD,81.1314,High-temperature bonding resin,High,CAT05,Pacific Optics Group,Southeast Asia
+Q000081,2027-01,SUP001,MAT001,20.6472,0.45,0.04,260,1344,9,2027-01-31,1,USD,21.9231,Aluminosilicate glass blank,High,CAT01,Orient Precision Materials,East Asia
+Q000082,2027-01,SUP002,MAT001,22.8959,0.666,0.04,310,1702,15,2027-01-31,1,USD,24.4777,Aluminosilicate glass blank,High,CAT01,Hikari Advanced Components,East Asia
+Q000083,2027-01,SUP004,MAT001,21.3709,0.882,0.0,360,2061,13,2027-01-31,1,USD,22.2529,Aluminosilicate glass blank,High,CAT01,VietTech Manufacturing,Southeast Asia
+Q000084,2027-01,SUP007,MAT001,21.8302,1.098,0.04,410,2419,15,2027-01-31,1,USD,23.8014,Aluminosilicate glass blank,High,CAT01,Guangdong Industrial Co.,East Asia
+Q000085,2027-01,SUP001,MAT002,28.7683,0.625,0.04,200,1042,9,2027-01-31,1,USD,30.544,Glass-ceramic preform,High,CAT01,Orient Precision Materials,East Asia
+Q000086,2027-01,SUP003,MAT002,30.6049,0.925,0.04,240,1321,11,2027-01-31,1,USD,32.7541,Glass-ceramic preform,High,CAT01,HanSol Technical Supply,East Asia
+Q000087,2027-01,SUP005,MAT002,31.0407,1.225,0.04,280,1598,13,2027-01-31,1,USD,33.5073,Glass-ceramic preform,High,CAT01,Formosa Optical Solutions,East Asia
+Q000088,2027-01,SUP007,MAT002,29.8957,1.525,0.04,315,1877,15,2027-01-31,1,USD,32.6165,Glass-ceramic preform,High,CAT01,Guangdong Industrial Co.,East Asia
+Q000089,2027-01,SUP003,MAT003,53.1864,1.1,0.04,110,578,9,2027-01-31,1,USD,56.4139,Anti-reflective coating solution,High,CAT02,HanSol Technical Supply,East Asia
+Q000090,2027-01,SUP005,MAT003,52.8729,1.628,0.04,135,734,11,2027-01-31,1,USD,56.6158,Anti-reflective coating solution,High,CAT02,Formosa Optical Solutions,East Asia
+Q000091,2027-01,SUP006,MAT003,60.0027,2.156,0.04,155,887,17,2027-01-31,1,USD,64.5588,Anti-reflective coating solution,High,CAT02,Nippon Surface Systems,East Asia
+Q000092,2027-01,SUP012,MAT003,56.5645,2.684,0.02,175,1043,15,2027-01-31,1,USD,60.3798,Anti-reflective coating solution,High,CAT02,Pacific Optics Group,Southeast Asia
+Q000093,2027-01,SUP002,MAT004,116.7909,2.325,0.04,60,311,13,2027-01-31,1,USD,123.7875,Vacuum deposition target,High,CAT02,Hikari Advanced Components,East Asia
+Q000094,2027-01,SUP005,MAT004,113.7959,3.441,0.04,70,393,11,2027-01-31,1,USD,121.7887,Vacuum deposition target,High,CAT02,Formosa Optical Solutions,East Asia
+Q000095,2027-01,SUP006,MAT004,124.0251,4.557,0.04,85,475,17,2027-01-31,1,USD,133.5431,Vacuum deposition target,High,CAT02,Nippon Surface Systems,East Asia
+Q000096,2027-01,SUP010,MAT004,132.7482,5.673,0.04,95,559,19,2027-01-31,1,USD,143.7311,Vacuum deposition target,High,CAT02,EuroChem Advanced Materials,Europe
+Q000097,2027-01,SUP001,MAT005,36.3535,0.775,0.04,140,718,9,2027-01-31,1,USD,38.5826,CNC precision frame,Medium,CAT03,Orient Precision Materials,East Asia
+Q000098,2027-01,SUP004,MAT005,35.8117,1.147,0.0,165,910,11,2027-01-31,1,USD,36.9587,CNC precision frame,Medium,CAT03,VietTech Manufacturing,Southeast Asia
+Q000099,2027-01,SUP008,MAT005,37.4509,1.519,0.02,190,1102,13,2027-01-31,1,USD,39.7189,CNC precision frame,Medium,CAT03,ASEAN Precision Works,Southeast Asia
+Q000100,2027-01,SUP009,MAT005,38.4434,1.891,0.0,220,1293,15,2027-01-31,1,USD,40.3344,CNC precision frame,Medium,CAT03,Mekong Industrial Supply,Southeast Asia
+Q000101,2027-01,SUP004,MAT006,13.525,0.3,0.0,250,1297,9,2027-01-31,1,USD,13.825,Stainless mounting bracket,Medium,CAT03,VietTech Manufacturing,Southeast Asia
+Q000102,2027-01,SUP007,MAT006,13.7598,0.444,0.04,300,1643,11,2027-01-31,1,USD,14.7542,Stainless mounting bracket,Medium,CAT03,Guangdong Industrial Co.,East Asia
+Q000103,2027-01,SUP008,MAT006,14.6391,0.588,0.02,345,1989,13,2027-01-31,1,USD,15.5199,Stainless mounting bracket,Medium,CAT03,ASEAN Precision Works,Southeast Asia
+Q000104,2027-01,SUP009,MAT006,14.6315,0.732,0.0,395,2336,15,2027-01-31,1,USD,15.3635,Stainless mounting bracket,Medium,CAT03,Mekong Industrial Supply,Southeast Asia
+Q000105,2027-01,SUP007,MAT007,17.5106,0.4,0.04,155,787,9,2027-01-31,1,USD,18.611,Polishing slurry,Medium,CAT04,Guangdong Industrial Co.,East Asia
+Q000106,2027-01,SUP009,MAT007,18.3028,0.592,0.0,180,998,11,2027-01-31,1,USD,18.8948,Polishing slurry,Medium,CAT04,Mekong Industrial Supply,Southeast Asia
+Q000107,2027-01,SUP010,MAT007,22.1612,0.784,0.04,210,1208,17,2027-01-31,1,USD,23.8316,Polishing slurry,Medium,CAT04,EuroChem Advanced Materials,Europe
+Q000108,2027-01,SUP011,MAT007,21.367,0.976,0.02,240,1418,15,2027-01-31,1,USD,22.7703,Polishing slurry,Medium,CAT04,Singapore MicroMaterials,Southeast Asia
+Q000109,2027-01,SUP003,MAT008,46.2927,0.975,0.04,80,412,9,2027-01-31,1,USD,49.1194,Diamond grinding pad,Medium,CAT04,HanSol Technical Supply,East Asia
+Q000110,2027-01,SUP008,MAT008,45.704,1.443,0.02,95,522,11,2027-01-31,1,USD,48.0611,Diamond grinding pad,Medium,CAT04,ASEAN Precision Works,Southeast Asia
+Q000111,2027-01,SUP011,MAT008,50.2949,1.911,0.02,110,632,13,2027-01-31,1,USD,53.2118,Diamond grinding pad,Medium,CAT04,Singapore MicroMaterials,Southeast Asia
+Q000112,2027-01,SUP012,MAT008,49.4251,2.379,0.02,125,742,15,2027-01-31,1,USD,52.7926,Diamond grinding pad,Medium,CAT04,Pacific Optics Group,Southeast Asia
+Q000113,2027-01,SUP002,MAT009,60.1602,1.2,0.04,95,486,13,2027-01-31,1,USD,63.7666,UV optical adhesive,High,CAT05,Hikari Advanced Components,East Asia
+Q000114,2027-01,SUP006,MAT009,62.6542,1.776,0.04,110,616,15,2027-01-31,1,USD,66.9364,UV optical adhesive,High,CAT05,Nippon Surface Systems,East Asia
+Q000115,2027-01,SUP010,MAT009,65.6141,2.352,0.04,130,745,17,2027-01-31,1,USD,70.5907,UV optical adhesive,High,CAT05,EuroChem Advanced Materials,Europe
+Q000116,2027-01,SUP011,MAT009,64.7873,2.928,0.02,150,875,15,2027-01-31,1,USD,69.011,UV optical adhesive,High,CAT05,Singapore MicroMaterials,Southeast Asia
+Q000117,2027-01,SUP003,MAT010,73.2287,1.5,0.04,75,380,9,2027-01-31,1,USD,77.6578,High-temperature bonding resin,High,CAT05,HanSol Technical Supply,East Asia
+Q000118,2027-01,SUP006,MAT010,78.7466,2.22,0.04,90,481,15,2027-01-31,1,USD,84.1165,High-temperature bonding resin,High,CAT05,Nippon Surface Systems,East Asia
+Q000119,2027-01,SUP010,MAT010,82.9133,2.94,0.04,100,582,17,2027-01-31,1,USD,89.1698,High-temperature bonding resin,High,CAT05,EuroChem Advanced Materials,Europe
+Q000120,2027-01,SUP012,MAT010,75.2552,3.66,0.02,115,683,15,2027-01-31,1,USD,80.4203,High-temperature bonding resin,High,CAT05,Pacific Optics Group,Southeast Asia
+Q000121,2027-02,SUP001,MAT001,20.7548,0.45,0.04,260,1363,9,2027-02-28,1,USD,22.035,Aluminosilicate glass blank,High,CAT01,Orient Precision Materials,East Asia
+Q000122,2027-02,SUP002,MAT001,23.1759,0.666,0.04,310,1727,15,2027-02-28,1,USD,24.7689,Aluminosilicate glass blank,High,CAT01,Hikari Advanced Components,East Asia
+Q000123,2027-02,SUP004,MAT001,21.3011,0.882,0.0,360,2091,13,2027-02-28,1,USD,22.1831,Aluminosilicate glass blank,High,CAT01,VietTech Manufacturing,Southeast Asia
+Q000124,2027-02,SUP007,MAT001,21.5955,1.098,0.04,410,2454,15,2027-02-28,1,USD,23.5573,Aluminosilicate glass blank,High,CAT01,Guangdong Industrial Co.,East Asia
+Q000125,2027-02,SUP001,MAT002,29.3132,0.625,0.04,200,1057,9,2027-02-28,1,USD,31.1107,Glass-ceramic preform,High,CAT01,Orient Precision Materials,East Asia
+Q000126,2027-02,SUP003,MAT002,30.6192,0.925,0.04,240,1340,11,2027-02-28,1,USD,32.769,Glass-ceramic preform,High,CAT01,HanSol Technical Supply,East Asia
+Q000127,2027-02,SUP005,MAT002,31.3943,1.225,0.04,280,1621,13,2027-02-28,1,USD,33.8751,Glass-ceramic preform,High,CAT01,Formosa Optical Solutions,East Asia
+Q000128,2027-02,SUP007,MAT002,30.0378,1.525,0.04,315,1905,15,2027-02-28,1,USD,32.7643,Glass-ceramic preform,High,CAT01,Guangdong Industrial Co.,East Asia
+Q000129,2027-02,SUP003,MAT003,52.0358,1.1,0.04,110,587,9,2027-02-28,1,USD,55.2172,Anti-reflective coating solution,High,CAT02,HanSol Technical Supply,East Asia
+Q000130,2027-02,SUP005,MAT003,53.863,1.628,0.04,135,745,11,2027-02-28,1,USD,57.6455,Anti-reflective coating solution,High,CAT02,Formosa Optical Solutions,East Asia
+Q000131,2027-02,SUP006,MAT003,58.3581,2.156,0.04,155,900,17,2027-02-28,1,USD,62.8484,Anti-reflective coating solution,High,CAT02,Nippon Surface Systems,East Asia
+Q000132,2027-02,SUP012,MAT003,56.7628,2.684,0.02,175,1058,15,2027-02-28,1,USD,60.5821,Anti-reflective coating solution,High,CAT02,Pacific Optics Group,Southeast Asia
+Q000133,2027-02,SUP002,MAT004,114.6024,2.325,0.04,60,315,13,2027-02-28,1,USD,121.5115,Vacuum deposition target,High,CAT02,Hikari Advanced Components,East Asia
+Q000134,2027-02,SUP005,MAT004,113.3266,3.441,0.04,70,399,11,2027-02-28,1,USD,121.3007,Vacuum deposition target,High,CAT02,Formosa Optical Solutions,East Asia
+Q000135,2027-02,SUP006,MAT004,127.0756,4.557,0.04,85,482,17,2027-02-28,1,USD,136.7156,Vacuum deposition target,High,CAT02,Nippon Surface Systems,East Asia
+Q000136,2027-02,SUP010,MAT004,131.4867,5.673,0.04,95,567,19,2027-02-28,1,USD,142.4192,Vacuum deposition target,High,CAT02,EuroChem Advanced Materials,Europe
+Q000137,2027-02,SUP001,MAT005,35.4432,0.775,0.04,140,729,9,2027-02-28,1,USD,37.6359,CNC precision frame,Medium,CAT03,Orient Precision Materials,East Asia
+Q000138,2027-02,SUP004,MAT005,36.1968,1.147,0.0,165,923,11,2027-02-28,1,USD,37.3438,CNC precision frame,Medium,CAT03,VietTech Manufacturing,Southeast Asia
+Q000139,2027-02,SUP008,MAT005,36.9338,1.519,0.02,190,1118,13,2027-02-28,1,USD,39.1915,CNC precision frame,Medium,CAT03,ASEAN Precision Works,Southeast Asia
+Q000140,2027-02,SUP009,MAT005,38.2342,1.891,0.0,220,1312,15,2027-02-28,1,USD,40.1252,CNC precision frame,Medium,CAT03,Mekong Industrial Supply,Southeast Asia
+Q000141,2027-02,SUP004,MAT006,13.5811,0.3,0.0,250,1316,9,2027-02-28,1,USD,13.8811,Stainless mounting bracket,Medium,CAT03,VietTech Manufacturing,Southeast Asia
+Q000142,2027-02,SUP007,MAT006,13.6906,0.444,0.04,300,1667,11,2027-02-28,1,USD,14.6822,Stainless mounting bracket,Medium,CAT03,Guangdong Industrial Co.,East Asia
+Q000143,2027-02,SUP008,MAT006,14.6921,0.588,0.02,345,2018,13,2027-02-28,1,USD,15.5739,Stainless mounting bracket,Medium,CAT03,ASEAN Precision Works,Southeast Asia
+Q000144,2027-02,SUP009,MAT006,14.7752,0.732,0.0,395,2370,15,2027-02-28,1,USD,15.5072,Stainless mounting bracket,Medium,CAT03,Mekong Industrial Supply,Southeast Asia
+Q000145,2027-02,SUP007,MAT007,17.8626,0.4,0.04,155,799,9,2027-02-28,1,USD,18.9771,Polishing slurry,Medium,CAT04,Guangdong Industrial Co.,East Asia
+Q000146,2027-02,SUP009,MAT007,18.3497,0.592,0.0,180,1012,11,2027-02-28,1,USD,18.9417,Polishing slurry,Medium,CAT04,Mekong Industrial Supply,Southeast Asia
+Q000147,2027-02,SUP010,MAT007,22.2519,0.784,0.04,210,1225,17,2027-02-28,1,USD,23.926,Polishing slurry,Medium,CAT04,EuroChem Advanced Materials,Europe
+Q000148,2027-02,SUP011,MAT007,21.8191,0.976,0.02,240,1438,15,2027-02-28,1,USD,23.2315,Polishing slurry,Medium,CAT04,Singapore MicroMaterials,Southeast Asia
+Q000149,2027-02,SUP003,MAT008,46.9422,0.975,0.04,80,418,9,2027-02-28,1,USD,49.7949,Diamond grinding pad,Medium,CAT04,HanSol Technical Supply,East Asia
+Q000150,2027-02,SUP008,MAT008,45.9919,1.443,0.02,95,529,11,2027-02-28,1,USD,48.3547,Diamond grinding pad,Medium,CAT04,ASEAN Precision Works,Southeast Asia
+Q000151,2027-02,SUP011,MAT008,51.7282,1.911,0.02,110,641,13,2027-02-28,1,USD,54.6738,Diamond grinding pad,Medium,CAT04,Singapore MicroMaterials,Southeast Asia
+Q000152,2027-02,SUP012,MAT008,50.0632,2.379,0.02,125,753,15,2027-02-28,1,USD,53.4435,Diamond grinding pad,Medium,CAT04,Pacific Optics Group,Southeast Asia
+Q000153,2027-02,SUP002,MAT009,61.0903,1.2,0.04,95,493,13,2027-02-28,1,USD,64.7339,UV optical adhesive,High,CAT05,Hikari Advanced Components,East Asia
+Q000154,2027-02,SUP006,MAT009,62.7715,1.776,0.04,110,625,15,2027-02-28,1,USD,67.0584,UV optical adhesive,High,CAT05,Nippon Surface Systems,East Asia
+Q000155,2027-02,SUP010,MAT009,66.2016,2.352,0.04,130,756,17,2027-02-28,1,USD,71.2017,UV optical adhesive,High,CAT05,EuroChem Advanced Materials,Europe
+Q000156,2027-02,SUP011,MAT009,63.4665,2.928,0.02,150,888,15,2027-02-28,1,USD,67.6638,UV optical adhesive,High,CAT05,Singapore MicroMaterials,Southeast Asia
+Q000157,2027-02,SUP003,MAT010,72.9746,1.5,0.04,75,385,9,2027-02-28,1,USD,77.3936,High-temperature bonding resin,High,CAT05,HanSol Technical Supply,East Asia
+Q000158,2027-02,SUP006,MAT010,78.3904,2.22,0.04,90,488,15,2027-02-28,1,USD,83.746,High-temperature bonding resin,High,CAT05,Nippon Surface Systems,East Asia
+Q000159,2027-02,SUP010,MAT010,83.4296,2.94,0.04,100,591,17,2027-02-28,1,USD,89.7068,High-temperature bonding resin,High,CAT05,EuroChem Advanced Materials,Europe
+Q000160,2027-02,SUP012,MAT010,75.9795,3.66,0.02,115,693,15,2027-02-28,1,USD,81.1591,High-temperature bonding resin,High,CAT05,Pacific Optics Group,Southeast Asia
+Q000161,2027-03,SUP001,MAT001,20.9009,0.45,0.04,260,1383,9,2027-03-31,1,USD,22.1869,Aluminosilicate glass blank,High,CAT01,Orient Precision Materials,East Asia
+Q000162,2027-03,SUP002,MAT001,23.1184,0.666,0.04,310,1752,15,2027-03-31,1,USD,24.7091,Aluminosilicate glass blank,High,CAT01,Hikari Advanced Components,East Asia
+Q000163,2027-03,SUP004,MAT001,21.5073,0.882,0.0,360,2121,13,2027-03-31,1,USD,22.3893,Aluminosilicate glass blank,High,CAT01,VietTech Manufacturing,Southeast Asia
+Q000164,2027-03,SUP007,MAT001,21.6354,1.098,0.04,410,2489,15,2027-03-31,1,USD,23.5988,Aluminosilicate glass blank,High,CAT01,Guangdong Industrial Co.,East Asia
+Q000165,2027-03,SUP001,MAT002,29.5927,0.625,0.04,200,1072,9,2027-03-31,1,USD,31.4014,Glass-ceramic preform,High,CAT01,Orient Precision Materials,East Asia
+Q000166,2027-03,SUP003,MAT002,30.5523,0.925,0.04,240,1359,11,2027-03-31,1,USD,32.6994,Glass-ceramic preform,High,CAT01,HanSol Technical Supply,East Asia
+Q000167,2027-03,SUP005,MAT002,31.6687,1.225,0.04,280,1645,13,2027-03-31,1,USD,34.1604,Glass-ceramic preform,High,CAT01,Formosa Optical Solutions,East Asia
+Q000168,2027-03,SUP007,MAT002,30.5527,1.525,0.04,315,1932,15,2027-03-31,1,USD,33.2998,Glass-ceramic preform,High,CAT01,Guangdong Industrial Co.,East Asia
+Q000169,2027-03,SUP003,MAT003,53.1427,1.1,0.04,110,595,9,2027-03-31,1,USD,56.3684,Anti-reflective coating solution,High,CAT02,HanSol Technical Supply,East Asia
+Q000170,2027-03,SUP005,MAT003,54.0632,1.628,0.04,135,755,11,2027-03-31,1,USD,57.8537,Anti-reflective coating solution,High,CAT02,Formosa Optical Solutions,East Asia
+Q000171,2027-03,SUP006,MAT003,59.8565,2.156,0.04,155,913,17,2027-03-31,1,USD,64.4068,Anti-reflective coating solution,High,CAT02,Nippon Surface Systems,East Asia
+Q000172,2027-03,SUP012,MAT003,55.752,2.684,0.02,175,1073,15,2027-03-31,1,USD,59.551,Anti-reflective coating solution,High,CAT02,Pacific Optics Group,Southeast Asia
+Q000173,2027-03,SUP002,MAT004,116.8679,2.325,0.04,60,320,13,2027-03-31,1,USD,123.8676,Vacuum deposition target,High,CAT02,Hikari Advanced Components,East Asia
+Q000174,2027-03,SUP005,MAT004,113.3565,3.441,0.04,70,404,11,2027-03-31,1,USD,121.3318,Vacuum deposition target,High,CAT02,Formosa Optical Solutions,East Asia
+Q000175,2027-03,SUP006,MAT004,126.0042,4.557,0.04,85,489,17,2027-03-31,1,USD,135.6014,Vacuum deposition target,High,CAT02,Nippon Surface Systems,East Asia
+Q000176,2027-03,SUP010,MAT004,131.6373,5.673,0.04,95,575,19,2027-03-31,1,USD,142.5758,Vacuum deposition target,High,CAT02,EuroChem Advanced Materials,Europe
+Q000177,2027-03,SUP001,MAT005,36.6474,0.775,0.04,140,739,9,2027-03-31,1,USD,38.8883,CNC precision frame,Medium,CAT03,Orient Precision Materials,East Asia
+Q000178,2027-03,SUP004,MAT005,36.7301,1.147,0.0,165,937,11,2027-03-31,1,USD,37.8771,CNC precision frame,Medium,CAT03,VietTech Manufacturing,Southeast Asia
+Q000179,2027-03,SUP008,MAT005,36.9546,1.519,0.02,190,1134,13,2027-03-31,1,USD,39.2127,CNC precision frame,Medium,CAT03,ASEAN Precision Works,Southeast Asia
+Q000180,2027-03,SUP009,MAT005,38.6063,1.891,0.0,220,1331,15,2027-03-31,1,USD,40.4973,CNC precision frame,Medium,CAT03,Mekong Industrial Supply,Southeast Asia
+Q000181,2027-03,SUP004,MAT006,13.7483,0.3,0.0,250,1335,9,2027-03-31,1,USD,14.0483,Stainless mounting bracket,Medium,CAT03,VietTech Manufacturing,Southeast Asia
+Q000182,2027-03,SUP007,MAT006,13.5486,0.444,0.04,300,1691,11,2027-03-31,1,USD,14.5345,Stainless mounting bracket,Medium,CAT03,Guangdong Industrial Co.,East Asia
+Q000183,2027-03,SUP008,MAT006,14.4752,0.588,0.02,345,2047,13,2027-03-31,1,USD,15.3527,Stainless mounting bracket,Medium,CAT03,ASEAN Precision Works,Southeast Asia
+Q000184,2027-03,SUP009,MAT006,14.6521,0.732,0.0,395,2404,15,2027-03-31,1,USD,15.3841,Stainless mounting bracket,Medium,CAT03,Mekong Industrial Supply,Southeast Asia
+Q000185,2027-03,SUP007,MAT007,17.7322,0.4,0.04,155,810,9,2027-03-31,1,USD,18.8415,Polishing slurry,Medium,CAT04,Guangdong Industrial Co.,East Asia
+Q000186,2027-03,SUP009,MAT007,18.2283,0.592,0.0,180,1027,11,2027-03-31,1,USD,18.8203,Polishing slurry,Medium,CAT04,Mekong Industrial Supply,Southeast Asia
+Q000187,2027-03,SUP010,MAT007,22.0995,0.784,0.04,210,1243,17,2027-03-31,1,USD,23.7675,Polishing slurry,Medium,CAT04,EuroChem Advanced Materials,Europe
+Q000188,2027-03,SUP011,MAT007,21.2283,0.976,0.02,240,1459,15,2027-03-31,1,USD,22.6289,Polishing slurry,Medium,CAT04,Singapore MicroMaterials,Southeast Asia
+Q000189,2027-03,SUP003,MAT008,47.4305,0.975,0.04,80,424,9,2027-03-31,1,USD,50.3027,Diamond grinding pad,Medium,CAT04,HanSol Technical Supply,East Asia
+Q000190,2027-03,SUP008,MAT008,45.991,1.443,0.02,95,537,11,2027-03-31,1,USD,48.3538,Diamond grinding pad,Medium,CAT04,ASEAN Precision Works,Southeast Asia
+Q000191,2027-03,SUP011,MAT008,50.5438,1.911,0.02,110,650,13,2027-03-31,1,USD,53.4657,Diamond grinding pad,Medium,CAT04,Singapore MicroMaterials,Southeast Asia
+Q000192,2027-03,SUP012,MAT008,49.051,2.379,0.02,125,764,15,2027-03-31,1,USD,52.411,Diamond grinding pad,Medium,CAT04,Pacific Optics Group,Southeast Asia
+Q000193,2027-03,SUP002,MAT009,59.3851,1.2,0.04,95,500,13,2027-03-31,1,USD,62.9605,UV optical adhesive,High,CAT05,Hikari Advanced Components,East Asia
+Q000194,2027-03,SUP006,MAT009,63.305,1.776,0.04,110,634,15,2027-03-31,1,USD,67.6132,UV optical adhesive,High,CAT05,Nippon Surface Systems,East Asia
+Q000195,2027-03,SUP010,MAT009,65.669,2.352,0.04,130,767,17,2027-03-31,1,USD,70.6478,UV optical adhesive,High,CAT05,EuroChem Advanced Materials,Europe
+Q000196,2027-03,SUP011,MAT009,65.2628,2.928,0.02,150,901,15,2027-03-31,1,USD,69.4961,UV optical adhesive,High,CAT05,Singapore MicroMaterials,Southeast Asia
+Q000197,2027-03,SUP003,MAT010,71.6178,1.5,0.04,75,391,9,2027-03-31,1,USD,75.9825,High-temperature bonding resin,High,CAT05,HanSol Technical Supply,East Asia
+Q000198,2027-03,SUP006,MAT010,80.1407,2.22,0.04,90,495,15,2027-03-31,1,USD,85.5663,High-temperature bonding resin,High,CAT05,Nippon Surface Systems,East Asia
+Q000199,2027-03,SUP010,MAT010,83.5678,2.94,0.04,100,599,17,2027-03-31,1,USD,89.8505,High-temperature bonding resin,High,CAT05,EuroChem Advanced Materials,Europe
+Q000200,2027-03,SUP012,MAT010,76.4699,3.66,0.02,115,703,15,2027-03-31,1,USD,81.6593,High-temperature bonding resin,High,CAT05,Pacific Optics Group,Southeast Asia
+Q000201,2027-04,SUP001,MAT001,20.8889,0.45,0.04,260,1402,9,2027-04-30,1,USD,22.1745,Aluminosilicate glass blank,High,CAT01,Orient Precision Materials,East Asia
+Q000202,2027-04,SUP002,MAT001,23.5147,0.666,0.04,310,1776,15,2027-04-30,1,USD,25.1213,Aluminosilicate glass blank,High,CAT01,Hikari Advanced Components,East Asia
+Q000203,2027-04,SUP004,MAT001,22.0466,0.882,0.0,360,2151,13,2027-04-30,1,USD,22.9286,Aluminosilicate glass blank,High,CAT01,VietTech Manufacturing,Southeast Asia
+Q000204,2027-04,SUP007,MAT001,22.1462,1.098,0.04,410,2525,15,2027-04-30,1,USD,24.13,Aluminosilicate glass blank,High,CAT01,Guangdong Industrial Co.,East Asia
+Q000205,2027-04,SUP001,MAT002,29.0245,0.625,0.04,200,1087,9,2027-04-30,1,USD,30.8105,Glass-ceramic preform,High,CAT01,Orient Precision Materials,East Asia
+Q000206,2027-04,SUP003,MAT002,31.1451,0.925,0.04,240,1379,11,2027-04-30,1,USD,33.3159,Glass-ceramic preform,High,CAT01,HanSol Technical Supply,East Asia
+Q000207,2027-04,SUP005,MAT002,31.3624,1.225,0.04,280,1668,13,2027-04-30,1,USD,33.8419,Glass-ceramic preform,High,CAT01,Formosa Optical Solutions,East Asia
+Q000208,2027-04,SUP007,MAT002,30.6891,1.525,0.04,315,1959,15,2027-04-30,1,USD,33.4417,Glass-ceramic preform,High,CAT01,Guangdong Industrial Co.,East Asia
+Q000209,2027-04,SUP003,MAT003,53.9165,1.1,0.04,110,604,9,2027-04-30,1,USD,57.1732,Anti-reflective coating solution,High,CAT02,HanSol Technical Supply,East Asia
+Q000210,2027-04,SUP005,MAT003,54.3511,1.628,0.04,135,766,11,2027-04-30,1,USD,58.1531,Anti-reflective coating solution,High,CAT02,Formosa Optical Solutions,East Asia
+Q000211,2027-04,SUP006,MAT003,59.8358,2.156,0.04,155,926,17,2027-04-30,1,USD,64.3852,Anti-reflective coating solution,High,CAT02,Nippon Surface Systems,East Asia
+Q000212,2027-04,SUP012,MAT003,56.5353,2.684,0.02,175,1088,15,2027-04-30,1,USD,60.35,Anti-reflective coating solution,High,CAT02,Pacific Optics Group,Southeast Asia
+Q000213,2027-04,SUP002,MAT004,118.3909,2.325,0.04,60,324,13,2027-04-30,1,USD,125.4515,Vacuum deposition target,High,CAT02,Hikari Advanced Components,East Asia
+Q000214,2027-04,SUP005,MAT004,115.5347,3.441,0.04,70,410,11,2027-04-30,1,USD,123.5971,Vacuum deposition target,High,CAT02,Formosa Optical Solutions,East Asia
+Q000215,2027-04,SUP006,MAT004,124.7487,4.557,0.04,85,496,17,2027-04-30,1,USD,134.2956,Vacuum deposition target,High,CAT02,Nippon Surface Systems,East Asia
+Q000216,2027-04,SUP010,MAT004,132.2483,5.673,0.04,95,583,19,2027-04-30,1,USD,143.2112,Vacuum deposition target,High,CAT02,EuroChem Advanced Materials,Europe
+Q000217,2027-04,SUP001,MAT005,36.3135,0.775,0.04,140,750,9,2027-04-30,1,USD,38.541,CNC precision frame,Medium,CAT03,Orient Precision Materials,East Asia
+Q000218,2027-04,SUP004,MAT005,35.6607,1.147,0.0,165,950,11,2027-04-30,1,USD,36.8077,CNC precision frame,Medium,CAT03,VietTech Manufacturing,Southeast Asia
+Q000219,2027-04,SUP008,MAT005,38.1921,1.519,0.02,190,1150,13,2027-04-30,1,USD,40.4749,CNC precision frame,Medium,CAT03,ASEAN Precision Works,Southeast Asia
+Q000220,2027-04,SUP009,MAT005,38.4456,1.891,0.0,220,1350,15,2027-04-30,1,USD,40.3366,CNC precision frame,Medium,CAT03,Mekong Industrial Supply,Southeast Asia
+Q000221,2027-04,SUP004,MAT006,13.8319,0.3,0.0,250,1354,9,2027-04-30,1,USD,14.1319,Stainless mounting bracket,Medium,CAT03,VietTech Manufacturing,Southeast Asia
+Q000222,2027-04,SUP007,MAT006,13.7419,0.444,0.04,300,1715,11,2027-04-30,1,USD,14.7356,Stainless mounting bracket,Medium,CAT03,Guangdong Industrial Co.,East Asia
+Q000223,2027-04,SUP008,MAT006,14.5466,0.588,0.02,345,2076,13,2027-04-30,1,USD,15.4255,Stainless mounting bracket,Medium,CAT03,ASEAN Precision Works,Southeast Asia
+Q000224,2027-04,SUP009,MAT006,14.459,0.732,0.0,395,2438,15,2027-04-30,1,USD,15.191,Stainless mounting bracket,Medium,CAT03,Mekong Industrial Supply,Southeast Asia
+Q000225,2027-04,SUP007,MAT007,18.0817,0.4,0.04,155,822,9,2027-04-30,1,USD,19.205,Polishing slurry,Medium,CAT04,Guangdong Industrial Co.,East Asia
+Q000226,2027-04,SUP009,MAT007,18.3123,0.592,0.0,180,1041,11,2027-04-30,1,USD,18.9043,Polishing slurry,Medium,CAT04,Mekong Industrial Supply,Southeast Asia
+Q000227,2027-04,SUP010,MAT007,22.0802,0.784,0.04,210,1260,17,2027-04-30,1,USD,23.7474,Polishing slurry,Medium,CAT04,EuroChem Advanced Materials,Europe
+Q000228,2027-04,SUP011,MAT007,21.2982,0.976,0.02,240,1480,15,2027-04-30,1,USD,22.7002,Polishing slurry,Medium,CAT04,Singapore MicroMaterials,Southeast Asia
+Q000229,2027-04,SUP003,MAT008,47.538,0.975,0.04,80,430,9,2027-04-30,1,USD,50.4145,Diamond grinding pad,Medium,CAT04,HanSol Technical Supply,East Asia
+Q000230,2027-04,SUP008,MAT008,45.764,1.443,0.02,95,545,11,2027-04-30,1,USD,48.1223,Diamond grinding pad,Medium,CAT04,ASEAN Precision Works,Southeast Asia
+Q000231,2027-04,SUP011,MAT008,51.5022,1.911,0.02,110,660,13,2027-04-30,1,USD,54.4432,Diamond grinding pad,Medium,CAT04,Singapore MicroMaterials,Southeast Asia
+Q000232,2027-04,SUP012,MAT008,50.447,2.379,0.02,125,775,15,2027-04-30,1,USD,53.8349,Diamond grinding pad,Medium,CAT04,Pacific Optics Group,Southeast Asia
+Q000233,2027-04,SUP002,MAT009,61.1658,1.2,0.04,95,507,13,2027-04-30,1,USD,64.8124,UV optical adhesive,High,CAT05,Hikari Advanced Components,East Asia
+Q000234,2027-04,SUP006,MAT009,62.0858,1.776,0.04,110,643,15,2027-04-30,1,USD,66.3452,UV optical adhesive,High,CAT05,Nippon Surface Systems,East Asia
+Q000235,2027-04,SUP010,MAT009,65.7747,2.352,0.04,130,778,17,2027-04-30,1,USD,70.7577,UV optical adhesive,High,CAT05,EuroChem Advanced Materials,Europe
+Q000236,2027-04,SUP011,MAT009,64.7001,2.928,0.02,150,913,15,2027-04-30,1,USD,68.9221,UV optical adhesive,High,CAT05,Singapore MicroMaterials,Southeast Asia
+Q000237,2027-04,SUP003,MAT010,71.6744,1.5,0.04,75,396,9,2027-04-30,1,USD,76.0414,High-temperature bonding resin,High,CAT05,HanSol Technical Supply,East Asia
+Q000238,2027-04,SUP006,MAT010,77.9276,2.22,0.04,90,502,15,2027-04-30,1,USD,83.2647,High-temperature bonding resin,High,CAT05,Nippon Surface Systems,East Asia
+Q000239,2027-04,SUP010,MAT010,81.8891,2.94,0.04,100,608,17,2027-04-30,1,USD,88.1047,High-temperature bonding resin,High,CAT05,EuroChem Advanced Materials,Europe
+Q000240,2027-04,SUP012,MAT010,76.8235,3.66,0.02,115,713,15,2027-04-30,1,USD,82.02,High-temperature bonding resin,High,CAT05,Pacific Optics Group,Southeast Asia

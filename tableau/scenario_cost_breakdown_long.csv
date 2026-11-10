@@ -1,0 +1,45 @@
+scenario_id,cost_component,economic_type,amount_usd,is_recommended
+RISK60_14D,Landed purchase,modeled cash,4820842.33,1
+RISK60_14D,Early-order carrying,modeled cash,24104.21,1
+RISK60_14D,Supplier activation,modeled cash,13200.0,1
+RISK60_14D,Expected service loss,modeled opportunity cost,198866.68,1
+RISK70_14D,Landed purchase,modeled cash,4819998.3,0
+RISK70_14D,Early-order carrying,modeled cash,24099.99,0
+RISK70_14D,Supplier activation,modeled cash,13200.0,0
+RISK70_14D,Expected service loss,modeled opportunity cost,200726.11,0
+COST_FULL_14D,Landed purchase,modeled cash,4812875.66,0
+COST_FULL_14D,Early-order carrying,modeled cash,24064.38,0
+COST_FULL_14D,Supplier activation,modeled cash,13200.0,0
+COST_FULL_14D,Expected service loss,modeled opportunity cost,213582.32,0
+DUAL70_14D,Landed purchase,modeled cash,4812875.66,0
+DUAL70_14D,Early-order carrying,modeled cash,24064.38,0
+DUAL70_14D,Supplier activation,modeled cash,13200.0,0
+DUAL70_14D,Expected service loss,modeled opportunity cost,213582.32,0
+RISK70_SELECT,Landed purchase,modeled cash,4830894.18,0
+RISK70_SELECT,Early-order carrying,modeled cash,21289.3,0
+RISK70_SELECT,Supplier activation,modeled cash,13200.0,0
+RISK70_SELECT,Expected service loss,modeled opportunity cost,247145.15,0
+BASE_GREEDY_14D,Landed purchase,modeled cash,4772402.03,0
+BASE_GREEDY_14D,Early-order carrying,modeled cash,23862.01,0
+BASE_GREEDY_14D,Supplier activation,modeled cash,14400.0,0
+BASE_GREEDY_14D,Expected service loss,modeled opportunity cost,329058.31,0
+RISK70_10D,Landed purchase,modeled cash,4830279.06,0
+RISK70_10D,Early-order carrying,modeled cash,14490.84,0
+RISK70_10D,Supplier activation,modeled cash,13200.0,0
+RISK70_10D,Expected service loss,modeled opportunity cost,533362.06,0
+RISK70_4D,Landed purchase,modeled cash,4829429.57,0
+RISK70_4D,Early-order carrying,modeled cash,0.0,0
+RISK70_4D,Supplier activation,modeled cash,13200.0,0
+RISK70_4D,Expected service loss,modeled opportunity cost,2761032.08,0
+COST_FULL,Landed purchase,modeled cash,4812875.66,0
+COST_FULL,Early-order carrying,modeled cash,0.0,0
+COST_FULL,Supplier activation,modeled cash,13200.0,0
+COST_FULL,Expected service loss,modeled opportunity cost,2855206.81,0
+DUAL70_4D,Landed purchase,modeled cash,4812875.66,0
+DUAL70_4D,Early-order carrying,modeled cash,0.0,0
+DUAL70_4D,Supplier activation,modeled cash,13200.0,0
+DUAL70_4D,Expected service loss,modeled opportunity cost,2855206.81,0
+BASE_GREEDY,Landed purchase,modeled cash,4772402.03,0
+BASE_GREEDY,Early-order carrying,modeled cash,0.0,0
+BASE_GREEDY,Supplier activation,modeled cash,14400.0,0
+BASE_GREEDY,Expected service loss,modeled opportunity cost,2938924.27,0

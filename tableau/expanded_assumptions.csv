@@ -1,0 +1,21 @@
+assumption_id,assumption_value,unit,definition
+shortage_penalty_existing,8,USD/unallocated unit/month,Original synthetic dataset assumption; NOT used to value production line stop in new risk-adjusted policy
+service_loss_high_critical,120,USD/on-time unaccepted unit,"New scenario assumption for critical materials; opportunity cost, not actual booked cash"
+service_loss_medium_critical,60,USD/on-time unaccepted unit,New scenario assumption for medium-critical materials
+service_loss_low_critical,30,USD/on-time unaccepted unit,Fallback assumption; current materials have none with Low criticality
+supplier_activation,1200.0,USD/supplier/horizon,New sourcing plan setup/mobilization per distinct supplier awarded once in 6 months
+inventory_carrying,0.015,share of inventory value/month,Original dataset assumption; incremental buffer beyond 4 days only
+reference_advance_order,4,days,Original synthetic dataset order lead buffer
+regional_monthly_shock_EastAsia,0.012,probability per month,New correlated Monte Carlo shock
+regional_monthly_shock_SoutheastAsia,0.009,probability per month,New correlated Monte Carlo shock
+regional_monthly_shock_Europe,0.006,probability per month,New correlated Monte Carlo shock
+regional_loss_min,0.1,fraction,New shared capacity loss range
+regional_loss_max,0.3,fraction,New shared capacity loss range
+supplier_idiosyncratic_shock,per-supplier dim_risk_assumptions,probability/month,Original dataset rates used unchanged
+idiosyncratic_loss_min,0.15,fraction,Original dataset supplier disruption loss lower bound
+idiosyncratic_loss_max,0.55,fraction,Original dataset supplier disruption loss upper bound
+lead_time_early_order_buffer,4/10/14 depending on policy,days,Synthetic planning policy; model includes stochastic supplier month lead time deviations
+risk_draws,3000,common Monte Carlo draws,Identical shocks across all eight policies
+risk_random_seed,20261109,seed,Reproducibility
+milp_primary_objective,landed+carry+activation+risk-proxy,USD equivalent,Optimized with per-unit expected on-time service loss proxy; evaluated independently via MC
+risk_valuation_scope,service loss is production opportunity cost,classification,Risk-adjusted USD equivalent is not invoiced cash and not audited savings
