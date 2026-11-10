@@ -1,28 +1,241 @@
-# Project B — Supplier Selection, Performance & Procurement Risk
+# Supplier Selection, Performance & Procurement Risk Optimization
 
-**Complete end-to-end synthetic portfolio:** 24-month history (Nov 2024–Oct 2026), 6-month sourcing plan (Nov 2026–Apr 2027), **12 fictional suppliers / 10 materials**. Includes SQL Server staging/analytics, mixed-integer supplier allocation, uncertainty simulation, 11-policy comparison, transparent assumptions, and Tableau-ready tables.
+**End-to-End Supply Chain Analytics Portfolio | SQL Server · Python · MILP · Monte Carlo · Tableau-ready Data**
 
-> **Provenance:** 100% synthetic. Absolutely no Kaggle data, Apple supplier data, real commercial quotations or realized cost savings. CV outcomes must say *modeled/simulated*.
+An independent portfolio case study examining how a manufacturing company can improve supplier selection, optimize purchase order allocation, and mitigate procurement risk while balancing sourcing costs, delivery reliability, and supply continuity.
 
-## Recommended result
+> **Data Disclaimer:** This project uses 100% synthetic procurement data. All suppliers, transactions, quotations, risk probabilities, and financial assumptions are fictional. No Apple supplier information or actual commercial data is used. All reported improvements are modeled outcomes, not realized business savings.
 
-**RISK60_14D**: assign all 126,708 six-month demand units, max 60% share per supplier per material-month, ≥2 suppliers (solution happens to use ≥3), and order lead time +14 days planning buffer. 3,000-draw Monte Carlo estimates **98.37% on-time accepted quantity** versus **75.75%** for the original greedy 4-day benchmark; **93.3% lower expected service shortfall**, **34.5% lower hypothetical risk-adjusted cost**. **Direct procurement/holding/setup cost is higher, not lower.** All improvement is not due to supplier diversification; most is lead-time buffer improvement. See `docs/FINAL_REPORT_VI.md`.
+---
 
-## Files
+## 1. Executive Summary
 
-- `data/*.csv`: original complete 12-supplier synthetic dataset (including original baseline/scorecard).
-- `outputs/scenario_comparison.csv`: all 11 decision policies with costs, simulated risk, concentration, service; sorted by risk-adjusted cost.
-- `outputs/allocation_all_policies.csv`: supplier award amounts, material and each plan-month, plus price, buffer, MOQ and capacity; **filter to RISK60_14D for recommended purchase schedule**.
-- `outputs/expanded_assumptions.csv`: line-by-line unit costs, penalty rates, risk rates, simulation seed.
-- `outputs/paired_comparison_uncertainty.csv`: conditional sampling error for policy comparisons.
-- `tableau/*.csv`: ready-to-open analytical marts (each separate data source); `docs/TABLEAU_STEP_BY_STEP_VI.md`.
-- `sql/01_create_tables.sql` and `python/load_sqlserver.py`: base DB setup; `sql/03_final_decision_views.sql`, `python/load_decisions_sqlserver.py`: reporting SQL and optimizer output imports.
-- `python/run_end_to_end.py`: reproducible MILP and Monte Carlo source (regenerates Tableau tables and reports metadata).
-- `python/build_reports.py`: regenerates documented numerical conclusions and CV bullets.
-- `docs/STUDY_GUIDE_VI.md`: learning curriculum; `docs/CV_BULLETS_EN.md`: CV-ready text.
-- `Supplier_B_Inputs_and_Scorecards.xlsx`: original curated input workbook (not an optimizer output; source CSVs are canonical).
+### Business Problem
 
-## Quick start (Windows / VSCode)
+A manufacturer sourcing precision electronic and optical components must balance competing procurement objectives:
+
+- Minimize total landed procurement costs.
+- Improve supplier delivery and quality performance.
+- Ensure sufficient supply to fulfill forecast demand.
+- Reduce dependency on individual suppliers.
+- Mitigate disruption risks through diversified sourcing and proactive purchase order planning.
+
+**Key question:**
+
+*Which suppliers should the company select, how should purchase orders be allocated, and when should orders be released to minimize risk-adjusted total cost while maintaining supply continuity?*
+
+### Dataset Overview
+
+| Dataset Component | Scope |
+|---|---|
+| Suppliers | 12 fictional suppliers |
+| Materials | 10 material SKUs |
+| Historical Purchase Orders | 784 |
+| Shipment Records | 1,022 |
+| Historical Period | Nov 2024 – Oct 2026 |
+| Planning Horizon | Nov 2026 – Apr 2027 |
+| Forecast Demand | 126,708 units |
+| Sourcing Policies Evaluated | 11 |
+| Monte Carlo Simulation | 3,000 draws |
+
+The dataset integrates historical procurement activity, supplier quality and delivery performance, RFQ pricing, supplier capacity, minimum order quantities, future demand, and explicit cost and risk assumptions.
+
+### Key Results
+
+| KPI | Baseline | Recommended Policy |
+|---|---:|---:|
+| Planned Demand Allocation | 99.24% | 100.00% |
+| Allocated Quantity | 125,745 | 126,708 |
+| Unallocated Demand | 963 | 0 |
+| Modeled On-Time Accepted Supply | 75.75% | 98.37% |
+| Expected Service Shortfall | 30,723 units | 2,071 units |
+| Modeled Risk-Adjusted Total Cost | $7.73M | $5.06M |
+
+**Modeled improvements:**
+
+- **100% planned demand allocation** across 126,708 units.
+- **+22.62 percentage points** in modeled on-time accepted supply.
+- **93.3% reduction** in expected service shortfall.
+- **34.5% reduction** in assumed risk-adjusted total cost.
+
+These improvements reflect the combined effects of earlier purchase order planning and supplier allocation optimization.
+
+**Important:** Direct sourcing, inventory-holding, and setup costs increase by approximately **$71.3K** under the recommended policy. The decrease in risk-adjusted cost reflects lower expected shortage-related losses under assumed penalty rates; it is not a realized procurement cost saving.
+
+---
+
+## 2. Recommended Sourcing Strategy
+
+### Selected Policy: `RISK60_14D`
+
+The recommended policy combines risk-aware purchase order allocation with proactive lead-time management.
+
+| Decision Variable | Recommended Policy |
+|---|---|
+| Allocation Method | Risk-adjusted MILP |
+| Supplier Concentration Limit | Maximum 60% per material-month |
+| Sourcing Strategy | Minimum 2 approved suppliers per material-month |
+| Purchase Order Planning Buffer | 14 days |
+| Demand Allocation | 126,708 units |
+| Evaluation | Monte Carlo simulation |
+
+### Why This Strategy?
+
+**1. Earlier purchase order release**
+
+Increasing the planning buffer from 4 to 14 days provides more time to absorb supplier lead-time variability.
+
+This is the primary driver of the modeled service-level improvement.
+
+**2. Risk-aware supplier allocation**
+
+A mixed-integer linear programming model allocates purchasing requirements across approved suppliers while considering:
+
+- Landed procurement costs.
+- Supplier capacity constraints.
+- Minimum order quantities (MOQ).
+- Supplier eligibility.
+- Supply concentration limits.
+- Delivery and quality risk assumptions.
+
+**3. Supplier diversification**
+
+The model limits supplier concentration to reduce dependence on any single source. Although the constraint requires a minimum of two suppliers, the selected solution uses at least three suppliers for each material-month.
+
+### Separating the Benefits
+
+| Scenario | Modeled On-Time Accepted Supply |
+|---|---:|
+| Original baseline — 4-day buffer | 75.75% |
+| Baseline allocation — 14-day buffer | 97.46% |
+| Risk-aware allocation — 14-day buffer | 98.37% |
+
+The additional improvement from 97.46% to 98.37% demonstrates the incremental benefit of risk-aware supplier allocation when the planning buffer is held constant.
+
+Compared with a full-coverage, cost-minimizing allocation using the same 14-day buffer, the recommended risk-aware policy reduces expected risk-adjusted cost by approximately **$6.7K**.
+
+**Decision interpretation:** The recommendation prioritizes supply reliability and lower expected disruption losses rather than minimum direct purchase price.
+
+---
+
+## 3. Analytical Methodology
+
+### Phase 1 — Supplier Performance Analysis
+
+**Tools:** SQL Server, Python
+
+Analyze historical procurement performance through:
+
+- Purchase Order On-Time In-Full (PO OTIF).
+- Supplier delivery reliability.
+- Defect Parts Per Million (PPM).
+- Landed procurement spend.
+- Lead-time performance.
+- Supplier performance scorecards.
+
+The historical PO OTIF metric is distinct from the simulated on-time accepted quantity service metric used in future sourcing scenarios.
+
+### Phase 2 — Supplier Selection & Cost Analysis
+
+**Tools:** SQL Server, Python
+
+Evaluate suppliers using:
+
+- Weighted supplier scorecards.
+- Landed cost and RFQ comparisons.
+- Supplier eligibility and capacity.
+- Kraljic portfolio classification.
+- Supplier concentration analysis.
+
+### Phase 3 — Purchase Order Allocation Optimization
+
+**Tool:** Python — Mixed-Integer Linear Programming (MILP)
+
+Optimize supplier award quantities subject to operational and sourcing constraints.
+
+The model evaluates alternative purchasing policies, including cost-focused allocation, supplier diversification, concentration limits, and risk-aware sourcing.
+
+The objective is to identify feasible purchasing plans and assess trade-offs between direct sourcing costs and expected supply risk.
+
+### Phase 4 — Procurement Risk Simulation
+
+**Tool:** Python — Monte Carlo Simulation
+
+Evaluate 11 sourcing policies using 3,000 simulation draws with comparable uncertainty scenarios.
+
+The simulations incorporate modeled delivery, quality, and disruption uncertainty.
+
+Key outputs include:
+
+- Expected service shortfall.
+- On-time accepted supply.
+- Risk-adjusted total cost.
+- Policy-level uncertainty comparisons.
+- Supplier concentration and allocation results.
+
+### Phase 5 — Visualization & Decision Reporting
+
+**Tools:** Tableau-ready CSV datasets, SQL reporting views
+
+Prepare supplier performance, sourcing allocation, policy comparison, and risk simulation results for interactive dashboards and executive reporting.
+
+*Current visualization status: Tableau-ready data marts and an HTML executive dashboard preview are available. A native Tableau `.twb` or `.twbx` workbook has not yet been published.*
+
+---
+
+## 4. Technology Stack
+
+| Technology | Application |
+|---|---|
+| SQL Server | Data staging, historical procurement analysis, reporting views |
+| Python | Data processing, optimization, scenario evaluation |
+| pandas / NumPy | Data manipulation and analytical calculations |
+| SciPy | Mixed-integer optimization |
+| Monte Carlo Simulation | Procurement risk and supply uncertainty |
+| Tableau | Planned interactive supplier analytics and decision dashboards |
+| Excel | Input assumptions and supplier scorecard review |
+| GitHub | Version control and project documentation |
+
+---
+
+## 5. Repository Structure
+
+| Directory / File | Description |
+|---|---|
+| `data/*.csv` | Complete original synthetic procurement dataset |
+| `sql/` | SQL Server table creation and analytical views |
+| `python/run_end_to_end.py` | Main MILP and Monte Carlo workflow |
+| `python/build_reports.py` | Generates numerical summaries and CV-ready results |
+| `outputs/scenario_comparison.csv` | Comparison of 11 sourcing policies |
+| `outputs/allocation_all_policies.csv` | Supplier-level purchasing plans by policy, material, and month |
+| `outputs/expanded_assumptions.csv` | Cost, risk, and simulation assumptions |
+| `outputs/paired_comparison_uncertainty.csv` | Simulation uncertainty comparisons |
+| `tableau/*.csv` | Prepared analytical data marts |
+| `docs/FINAL_REPORT_VI.md` | Detailed findings and recommended sourcing decision |
+| `docs/STUDY_GUIDE_VI.md` | Step-by-step learning guide |
+| `docs/TABLEAU_STEP_BY_STEP_VI.md` | Instructions for creating Tableau dashboards |
+| `docs/CV_BULLETS_EN.md` | Project summary for professional portfolio use |
+| `Supplier_B_Inputs_and_Scorecards.xlsx` | Curated input assumptions and scorecards |
+
+To examine the recommended purchasing plan, filter `outputs/allocation_all_policies.csv` to:
+
+`policy_id = RISK60_14D`
+
+This provides supplier-level order allocations by material and planning month.
+
+---
+
+## 6. Reproducing the Analysis
+
+### Requirements
+
+- Python 3 with compatible NumPy, pandas, and SciPy versions.
+- SQL Server (optional for database analysis).
+- Tableau Desktop or Tableau Public (optional for dashboard development).
+
+### Run the Python Models
+
+Clone the repository and open the project folder in VS Code.
 
 ```powershell
 python -m venv .venv
@@ -32,20 +245,87 @@ python python/run_end_to_end.py
 python python/build_reports.py
 ```
 
-For SQL Server: Run `sql/01_create_tables.sql` **only on a fresh SupplierManagementB DB because it DROPS existing pb tables**; edit connection string in `python/load_sqlserver.py`; `pip install pyodbc`; import historical facts; run `sql/02_supplier_analysis.sql` and `sql/03_final_decision_views.sql`. To put modeled outputs into SQL Server, edit and run `python/load_decisions_sqlserver.py` then rerun SQL views script.
+The scripts regenerate the optimization and Monte Carlo outputs, Tableau-ready datasets, and documented results.
 
-For Tableau: connect **individually** to each file in `tableau/` (`Text File`) or SQL Server reporting views; instructions in `docs/TABLEAU_STEP_BY_STEP_VI.md`. Do not physically join `scenario_comparison` with `allocation_all_policies` and then sum scenario-level costs (fanout error).
+### SQL Server Analysis
 
-## Project status
+1. Create a fresh `SupplierManagementB` database.
+2. Run `sql/01_create_tables.sql`.
+3. Configure the SQL Server connection in `python/load_sqlserver.py`.
+4. Install `pyodbc` and import historical data.
+5. Run `sql/02_supplier_analysis.sql`.
+6. Load the optimized decision outputs using `python/load_decisions_sqlserver.py`.
+7. Run `sql/03_final_decision_views.sql`.
 
-Solved simulated decision analysis, dataset and reproducible scripts **complete**. `.twb` / `.twbx` Tableau dashboard is **not generated automatically**: manual Tableau worksheets are described. Recommended decision is conditional on stated assumptions. The historical PO OTIF metric differs from Monte Carlo aggregate on-time quantity service.
+**Warning:** The initial table-creation script drops existing project tables. Run it only in a dedicated database where this behavior is acceptable.
 
-## Tableau extra prepared marts
+### Tableau Visualization
 
-- `tableau/rfq_unit_economics.csv`: all 240 supplier bids; quoted landed unit cost, lead time, MOQ, approved eligibility.
-- `tableau/scenario_cost_breakdown_long.csv`: stacked cost-component chart with a clear `modeled cash` versus `modeled opportunity cost` tag.
-- `tableau/kraljic_category.csv`: category risk/profit impact coordinate map.
-- `tableau/historical_spend_by_supplier_material.csv`: pre-aggregated spend, avoiding 1-to-many invoice/shipment joins in Tableau.
-- `Project_B_Executive_Dashboard_Preview.html`: standalone interactive preview (not a Tableau workbook).
+Connect separately to the relevant files in `tableau/`, or use the SQL Server reporting views.
 
-**Planning feasibility limitation:** The Nov 2026–Apr 2027 forecast is a synthetic horizon. The 14-day forward ordering buffer is assumed achievable at planning time; first-month orders may have required a release date before Nov 9, 2026. The model is a forward-planning simulation rather than a live executable PO release schedule.
+Suggested dashboards:
+
+**Dashboard 1 — Supplier Performance**
+
+Historical spend, PO OTIF, Defect PPM, supplier ranking, and performance trends.
+
+**Dashboard 2 — Sourcing Optimization**
+
+Supplier allocation, demand coverage, landed costs, concentration, and scenario comparisons.
+
+**Dashboard 3 — Procurement Risk & Executive Decision**
+
+Monte Carlo shortfall distributions, risk-adjusted total cost, cost breakdown, and recommended sourcing policy.
+
+See `docs/TABLEAU_STEP_BY_STEP_VI.md` for implementation instructions.
+
+**Data modeling note:** Do not physically join policy-level cost summaries with supplier-level allocation records and then sum the policy-level costs. Different aggregation grains can create duplicate totals.
+
+---
+
+## 7. Additional Tableau Data Marts
+
+| File | Purpose |
+|---|---|
+| `tableau/rfq_unit_economics.csv` | Supplier bids, quoted landed unit costs, lead times, MOQ, eligibility |
+| `tableau/scenario_cost_breakdown_long.csv` | Direct cost versus modeled opportunity/risk cost |
+| `tableau/kraljic_category.csv` | Supply risk and profit-impact segmentation |
+| `tableau/historical_spend_by_supplier_material.csv` | Supplier-material spend analysis without join duplication |
+
+An interactive HTML executive dashboard preview is also included in `Project_B_Executive_Dashboard_Preview.html`. This preview is not a Tableau workbook.
+
+---
+
+## 8. Assumptions & Limitations
+
+This is a synthetic decision-support case study, not a live production sourcing system.
+
+Key limitations include:
+
+- Supplier profiles, RFQ prices, capacity, and performance histories are fictional.
+- Monte Carlo risk distributions rely on explicit assumptions rather than empirically validated supplier probabilities.
+- Risk-adjusted cost depends on assumed shortage penalties and associated cost parameters.
+- The recommended strategy is the best-performing policy under the modeled objective and evaluated scenarios, not a proven global optimum across every possible procurement strategy.
+- The 14-day planning buffer is assumed feasible. Some first-month purchase orders could require release before the planning horizon begins.
+- The simulated service metrics do not represent realized supplier performance.
+
+The model demonstrates analytical decision-making and sourcing trade-offs, not guaranteed business outcomes.
+
+---
+
+## 9. Final Business Recommendation
+
+**Recommended policy: `RISK60_14D`**
+
+Adopt risk-aware supplier allocation with a 60% supplier concentration cap, minimum dual sourcing, and a 14-day purchase order planning buffer.
+
+Under the stated assumptions, this policy provides complete planned demand allocation, higher modeled delivery reliability, and lower expected risk-adjusted total cost than the original baseline.
+
+The central finding is that **proactive lead-time management produces the largest service improvement, while supplier allocation optimization provides additional resilience and cost-risk benefits**.
+
+---
+
+**Project Type:** Independent Portfolio Case Study  
+**Industry Context:** Electronics & Precision Component Procurement  
+**Data Source:** 100% Synthetic  
+**Year:** 2026
